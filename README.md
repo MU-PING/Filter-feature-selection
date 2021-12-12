@@ -45,8 +45,8 @@
   3. 重複1.2步，直到達到停止條件
 
 * 概念圖  
-  <img src="https://user-images.githubusercontent.com/93152909/145706843-34e8fdb8-8067-49ae-8987-5ca9e74245d9.png" width="300">
- 
+  <img src="https://user-images.githubusercontent.com/93152909/145709033-69aa23a8-518c-44b5-b332-38a72a376474.png" width="300">
+
 * 優點
   * 選出的特徵子集合可以被用在任何機器學習演算法
   
