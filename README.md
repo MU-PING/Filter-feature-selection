@@ -54,7 +54,7 @@
   
 ### 【搜索策略】
 搜索策略分為3大類
-> 策略眾多，不詳述，詳細可參考：[特徵選擇常用演算法綜述](https://www.itread01.com/content/1550470354.html)
+> 策略眾多，不詳述，詳細可參考：[特徵選擇常用演算法綜述 - IT閱讀](https://www.itread01.com/content/1550470354.html)
 
 * 完全搜尋(Complete)
 
@@ -83,11 +83,11 @@
      ```
 
 ## 參考
-* https://www.itread01.com/content/1547263108.html
-* https://www.itread01.com/content/1550470354.html
-* https://ithelp.ithome.com.tw/articles/10245037
-* https://jasmine880809.medium.com/feature-selection-%E7%89%B9%E5%BE%B5%E9%81%B8%E5%8F%96-filter-%E3%84%A7-python-sklearn-%E5%AF%A6%E4%BD%9C-2797b941c6a9
-* https://www.796t.com/article.php?id=173751
-* https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E4%B9%8B%E7%89%B9%E5%BE%B5%E9%81%B8%E6%93%87%E6%A6%82%E5%BF%B5-ca11745db63c
+* [特徵選擇(feature selection) - IT閱讀](https://www.itread01.com/content/1547263108.html)
+* [特徵選擇常用演算法綜述 - IT閱讀](https://www.itread01.com/content/1550470354.html)
+* [Day28 - Feature Selection -- 1. Filter methods(過濾器法) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10245037)
+* [Feature Selection 特徵選取 -Filter(ㄧ) Python sklearn 實作 _ by Jasmine＿ _ Medium](https://jasmine880809.medium.com/feature-selection-%E7%89%B9%E5%BE%B5%E9%81%B8%E5%8F%96-filter-%E3%84%A7-python-sklearn-%E5%AF%A6%E4%BD%9C-2797b941c6a9)
+* [機器學習之特徵選擇（Feature Selection）_實用技巧_程式人生](https://www.796t.com/article.php?id=173751)
+* [特徵工程之特徵選擇概念. 特徵選擇是特徵工程裡的一個重要問題，其目標是尋找最優特徵子集。特徵選擇能剔除不相… _ by Ryan Lu _ AI反斗城 _ Medium](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E4%B9%8B%E7%89%B9%E5%BE%B5%E9%81%B8%E6%93%87%E6%A6%82%E5%BF%B5-ca11745db63c)
 
 > 備份於 Reference 資料夾中
