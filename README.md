@@ -28,7 +28,7 @@
 ### HOW
 一般 Feature selection 的演算法分為三類：
 
-* Filter methods【此篇介紹】
+* **Filter methods【此篇介紹】**
 
 * Wrapper methods
 
