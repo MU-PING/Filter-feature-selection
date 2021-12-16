@@ -1,7 +1,7 @@
 # filter-feature-selection
 ## 程式簡介
 ### 簡述
-* 使用 sklearn 實作 Feature Selection 中的 **Filter methods【過濾器法】**
+* 使用 Sklearn 套件實作 Feature Selection 中的 **Filter methods【過濾器法】**
 
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
@@ -35,52 +35,50 @@
 * Embedding methods
 
 ## Filter methods【過濾器法】
-> 選擇特徵子集時，只考慮特徵內部的特點【評價函數】，不考慮將來要使用哪一種模型進行學習
 
-* 步驟
-  1. 【搜索策略】從原始特徵中挑出特徵子集
+* 使用統計變量來評估特徵或特徵子集的特性
 
-  2. 【評價函數】分析特徵子集中特徵的相關性、離散程度或其他指標來衡量其好壞
+* 計算統計變量的同時，設定一閥值，並根據每個特徵是否超過閥值來決定是否要選取
 
-  3. 重複1.2步，直到達到停止條件
+* 選擇特徵子集時，只考慮特徵的特性，不考慮將來要使用哪一種模型進行學習
+
+* 常見的統計變量，例如：相關性、離散程度等等
 
 * 概念圖  
-  <img src="https://user-images.githubusercontent.com/93152909/145709033-69aa23a8-518c-44b5-b332-38a72a376474.png" width="300">
+
+  ![image](https://user-images.githubusercontent.com/93152909/146445500-85c3360f-1188-4d1d-8d2d-dd6e6be70442.png)
 
 * 優點
   * 選出的特徵子集合可以被用在任何機器學習演算法
   
   * 不會耗費大量電腦資源
+
+* 相關統計變量【僅列出有實作的】
+
+  * 變異數 - Variance
   
-### 【搜索策略】
-搜索策略分為3大類
-> 策略眾多，不詳述，詳細可參考：[特徵選擇常用演算法綜述 - IT閱讀](https://www.itread01.com/content/1550470354.html)
-
-* 完全搜尋(Complete)
-
-* 啟發式搜尋(Heuristic)
-
-* 隨機搜尋(Random) 
-
-> 注意⚠在Filter methods中，搜索策略可以簡化，ex：方差過濾，算出所有特徵的方差，刪除低於閥值的即可
-
-### 【評價函數】
-依它處理特徵的方式型態 可分為 Univariate 和 Multivariate 兩種：
-> 以下僅列出程式中有使用的幾種，其他種類可以上網查詢或查詢參考資料
-
-* Univariate methods：只考慮單一特徵的統計特點，例如：方差
-  * 方差過濾
+  * 相關係數 - Correlation
   
-    ```python
-    from sklearn.feature_selection import VarianceThreshold
-    ```
-* Multivariate methods：評估全部的特徵，考慮到變數之間的關係，例如：卡方檢定
-   * 卡方過濾
+  * 卡方檢定 - Chi-square
+  
+  > 除上述三種，還有很多統計變量可用，可以上網另查
+  
+### 變異數 - Variance
+* 屬於 Univariate methods：只考慮單一特徵的統計特點
+* Sklearn
+
+  ```python
+  from sklearn.feature_selection import VarianceThreshold
+  ```
    
-     ```python
-   	 from sklearn.feature_selection import SelectKBest
-     from sklearn.feature_selection import chi2
-     ```
+### 卡方檢定 - Chi-square
+* 屬於 Multivariate methods：評估全部的特徵，考慮到變數之間的關係
+* Sklearn
+
+   ```python
+   from sklearn.feature_selection import SelectKBest
+   from sklearn.feature_selection import chi2
+   ```
 
 ## 參考
 * [特徵選擇(feature selection) - IT閱讀](https://www.itread01.com/content/1547263108.html)
