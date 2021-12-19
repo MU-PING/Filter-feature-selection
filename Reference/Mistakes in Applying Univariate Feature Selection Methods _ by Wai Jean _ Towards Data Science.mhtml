@@ -1,0 +1,2950 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://towardsdatascience.com/mistakes-in-applying-univariate-feature-selection-methods-34c43ce8b93d
+Subject: Mistakes in Applying Univariate Feature Selection Methods | by Wai Jean | Towards Data Science
+Date: Sun, 19 Dec 2021 19:56:38 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----"
+
+
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/html
+Content-ID: <frame-AFF36107CA99434A9937B5669FD614FB@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://towardsdatascience.com/mistakes-in-applying-univariate-feature-selection-methods-34c43ce8b93d
+
+<!DOCTYPE html><html lang=3D"en" data-rh=3D"lang"><head><meta http-equiv=3D=
+"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"styleshe=
+et" type=3D"text/css" href=3D"cid:css-b5987e31-51cb-4622-8208-cc68eb1dc129@=
+mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-b=
+faf9f34-8002-40b8-be56-bfee167cfe59@mhtml.blink" /><link rel=3D"stylesheet"=
+ type=3D"text/css" href=3D"cid:css-2edb9b88-a8e1-42d8-ae4f-3b2cb4e2f9f3@mht=
+ml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-4696=
+97e8-e451-480a-b378-dd85f76cb8a5@mhtml.blink" /><link rel=3D"stylesheet" ty=
+pe=3D"text/css" href=3D"cid:css-254a10be-abb1-4c5a-abf6-2b1c98054bfa@mhtml.=
+blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-f11e486=
+a-58d6-4e68-bb91-ceffa622deb0@mhtml.blink" /><link rel=3D"stylesheet" type=
+=3D"text/css" href=3D"cid:css-9f46c8e8-df08-42f8-937c-5502c099fcec@mhtml.bl=
+ink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-21011656-=
+5502-46f1-b395-5ca3d67d8d43@mhtml.blink" /><link rel=3D"stylesheet" type=3D=
+"text/css" href=3D"cid:css-b6cb42a3-29aa-4b1f-ab73-78b56c10c628@mhtml.blink=
+" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-e63acd4d-207=
+3-4790-82a2-cf6db6f87c5d@mhtml.blink" /><link rel=3D"stylesheet" type=3D"te=
+xt/css" href=3D"cid:css-8853e165-f11c-4627-95e5-613b81eb2749@mhtml.blink" /=
+><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-51b138f5-e5ee-4=
+7eb-8a5b-b0ec40030ee9@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-a448812e-4ac6-4fa7-a8d2-1d0dbbd6c945@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-ad91c8c6-c8f6-4d91=
+-baf6-8a6f62253238@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
+" href=3D"cid:css-88d2d988-0232-4d64-96e4-86e07c0fb56b@mhtml.blink" /><link=
+ rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-01cabbfd-e4b2-415d-ad=
+0e-5826ee3e302c@mhtml.blink" /><title>Mistakes in Applying Univariate Featu=
+re Selection Methods | by Wai Jean | Towards Data Science</title><meta data=
+-rh=3D"true" name=3D"viewport" content=3D"width=3Ddevice-width,minimum-scal=
+e=3D1,initial-scale=3D1,maximum-scale=3D1"><meta data-rh=3D"true" name=3D"t=
+heme-color" content=3D"#000000"><meta data-rh=3D"true" name=3D"twitter:app:=
+name:iphone" content=3D"Medium"><meta data-rh=3D"true" name=3D"twitter:app:=
+id:iphone" content=3D"828256236"><meta data-rh=3D"true" property=3D"al:ios:=
+app_name" content=3D"Medium"><meta data-rh=3D"true" property=3D"al:ios:app_=
+store_id" content=3D"828256236"><meta data-rh=3D"true" property=3D"al:andro=
+id:package" content=3D"com.medium.reader"><meta data-rh=3D"true" property=
+=3D"fb:app_id" content=3D"542599432471018"><meta data-rh=3D"true" property=
+=3D"og:site_name" content=3D"Medium"><meta data-rh=3D"true" property=3D"og:=
+type" content=3D"article"><meta data-rh=3D"true" property=3D"article:publis=
+hed_time" content=3D"2020-12-04T17:47:38.992Z"><meta data-rh=3D"true" name=
+=3D"title" content=3D"Mistakes in Applying Univariate Feature Selection Met=
+hods | by Wai Jean | Towards Data Science"><meta data-rh=3D"true" property=
+=3D"og:title" content=3D"Mistakes in Applying Univariate Feature Selection =
+Methods"><meta data-rh=3D"true" property=3D"twitter:title" content=3D"Mista=
+kes in Applying Univariate Feature Selection Methods"><meta data-rh=3D"true=
+" name=3D"twitter:site" content=3D"@TDataScience"><meta data-rh=3D"true" na=
+me=3D"twitter:app:url:iphone" content=3D"medium://p/34c43ce8b93d"><meta dat=
+a-rh=3D"true" property=3D"al:android:url" content=3D"medium://p/34c43ce8b93=
+d"><meta data-rh=3D"true" property=3D"al:ios:url" content=3D"medium://p/34c=
+43ce8b93d"><meta data-rh=3D"true" property=3D"al:android:app_name" content=
+=3D"Medium"><meta data-rh=3D"true" name=3D"description" content=3D"In Pytho=
+n scikit-learn library, there are various univariate feature selection meth=
+ods such as Regression F-score, ANOVA and Chi-squared. Perhaps due to the e=
+ase of applying these methods (sometimes=E2=80=A6"><meta data-rh=3D"true" p=
+roperty=3D"og:description" content=3D"When to apply Regression F-score, ANO=
+VA and Chi-squared test to continuous and categorical features?"><meta data=
+-rh=3D"true" property=3D"twitter:description" content=3D"When to apply Regr=
+ession F-score, ANOVA and Chi-squared test to continuous and categorical fe=
+atures?"><meta data-rh=3D"true" property=3D"og:url" content=3D"https://towa=
+rdsdatascience.com/mistakes-in-applying-univariate-feature-selection-method=
+s-34c43ce8b93d"><meta data-rh=3D"true" property=3D"al:web:url" content=3D"h=
+ttps://towardsdatascience.com/mistakes-in-applying-univariate-feature-selec=
+tion-methods-34c43ce8b93d"><meta data-rh=3D"true" property=3D"og:image" con=
+tent=3D"https://miro.medium.com/max/1200/0*pqMzSS33t7JxKJTC"><meta data-rh=
+=3D"true" name=3D"twitter:image:src" content=3D"https://miro.medium.com/max=
+/1200/0*pqMzSS33t7JxKJTC"><meta data-rh=3D"true" name=3D"twitter:card" cont=
+ent=3D"summary_large_image"><meta data-rh=3D"true" property=3D"article:auth=
+or" content=3D"https://medium.com/@waijean"><meta data-rh=3D"true" name=3D"=
+author" content=3D"Wai Jean"><meta data-rh=3D"true" name=3D"robots" content=
+=3D"index,follow,max-image-preview:large"><meta data-rh=3D"true" name=3D"re=
+ferrer" content=3D"unsafe-url"><meta data-rh=3D"true" name=3D"twitter:label=
+1" content=3D"Reading time"><meta data-rh=3D"true" name=3D"twitter:data1" c=
+ontent=3D"8 min read"><link data-rh=3D"true" rel=3D"search" type=3D"applica=
+tion/opensearchdescription+xml" title=3D"Medium" href=3D"https://towardsdat=
+ascience.com/osd.xml"><link data-rh=3D"true" rel=3D"apple-touch-icon" sizes=
+=3D"152x152" href=3D"https://miro.medium.com/fit/c/152/152/1*sHhtYhaCe2Uc3I=
+U0IgKwIQ.png"><link data-rh=3D"true" rel=3D"apple-touch-icon" sizes=3D"120x=
+120" href=3D"https://miro.medium.com/fit/c/120/120/1*sHhtYhaCe2Uc3IU0IgKwIQ=
+.png"><link data-rh=3D"true" rel=3D"apple-touch-icon" sizes=3D"76x76" href=
+=3D"https://miro.medium.com/fit/c/76/76/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"><link=
+ data-rh=3D"true" rel=3D"apple-touch-icon" sizes=3D"60x60" href=3D"https://=
+miro.medium.com/fit/c/60/60/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"><link data-rh=3D"=
+true" rel=3D"mask-icon" href=3D"https://cdn-static-1.medium.com/_/fp/icons/=
+Medium-Avatar-500x500.svg" color=3D"#171717"><link data-rh=3D"true" rel=3D"=
+preconnect" href=3D"https://glyph.medium.com/" crossorigin=3D""><link data-=
+rh=3D"true" rel=3D"preconnect" href=3D"https://logx.optimizely.com/"><link =
+data-rh=3D"true" id=3D"glyph_preload_link" rel=3D"preload" as=3D"style" typ=
+e=3D"text/css" href=3D"https://glyph.medium.com/css/unbound.css"><link data=
+-rh=3D"true" id=3D"glyph_link" rel=3D"stylesheet" type=3D"text/css" href=3D=
+"https://glyph.medium.com/css/unbound.css"><link data-rh=3D"true" rel=3D"au=
+thor" href=3D"https://medium.com/@waijean"><link data-rh=3D"true" rel=3D"ca=
+nonical" href=3D"https://towardsdatascience.com/mistakes-in-applying-univar=
+iate-feature-selection-methods-34c43ce8b93d"><link data-rh=3D"true" rel=3D"=
+alternate" href=3D"android-app://com.medium.reader/https/medium.com/p/34c43=
+ce8b93d"><link rel=3D"preload" href=3D"https://cdn.optimizely.com/js/161807=
+90160.js" as=3D"script"><link rel=3D"icon" href=3D"https://miro.medium.com/=
+fit/c/128/128/1*ChFMdf--f5jbm-AYv6VdYA@2x.png" data-rh=3D"true"></head><bod=
+y><div id=3D"root"><div class=3D"a b c"><div class=3D"d e f g h i j k"></di=
+v><div></div><div class=3D"s"><div class=3D"t s u"><div class=3D"ak al s am=
+ an"><div class=3D"n ao ap"><div class=3D"aq ar"><div class=3D"as s at ac">=
+<div class=3D"n p"><div class=3D"au av aw ax ay az ba v"><div class=3D"bb n=
+ o"><div class=3D"n o bc bd"><div class=3D"ag"><div class=3D"jv" id=3D"li-S=
+howPostUnderCollection-navbar-open-in-app-button"><div class=3D"cc aq ar"><=
+span class=3D"bf b bg bh cd"><a class=3D"bi bl ce cf cg ch ci cj ck bq bn b=
+o cl ue uf" href=3D"https://rsci.app.link/?%24canonical_url=3Dhttps%3A%2F%2=
+Fmedium.com%2Fp%2F34c43ce8b93d&amp;%7Efeature=3DLiOpenInAppButton&amp;%7Ech=
+annel=3DShowPostUnderCollection&amp;%7Estage=3DmobileNavBar&amp;source=3Dpo=
+st_page-----34c43ce8b93d-----------------------------------" rel=3D"noopene=
+r follow">Open in app</a></span></div></div></div></div><a aria-label=3D"Ho=
+mepage" href=3D"https://medium.com/?source=3Dpost_page-----34c43ce8b93d----=
+-------------------------------" rel=3D"noopener follow"><svg viewBox=3D"0 =
+0 1043.63 592.71" class=3D"q bl"><g data-name=3D"Layer 2"><g data-name=3D"L=
+ayer 1"><path d=3D"M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 46=
+0 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 15=
+4.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 14=
+7.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75=
+-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"></=
+path></g></g></svg></a></div></div></div></div></div><div class=3D"n p"><di=
+v class=3D"au av aw ax ay az ba v"><div class=3D"co n o bc cp cq cr cs ct c=
+u"><div class=3D"v n cv cp"><div class=3D"n v"><div class=3D"cw cx v n o bc=
+ cy cz da cr cs ct"><div class=3D"db dc s dd"><a aria-label=3D"Publication =
+Homepage" rel=3D"noopener follow" href=3D"https://towardsdatascience.com/?s=
+ource=3Dpost_page-----34c43ce8b93d-----------------------------------"><div=
+ class=3D"de df s"><img alt=3D"Towards Data Science" class=3D"" src=3D"http=
+s://miro.medium.com/max/112/1*AGyTPCaRzVqL77kFwUwHKg.png" width=3D"112" hei=
+ght=3D"35"></div></a></div></div></div><div class=3D"w x y k h z ab o ac jv=
+"><div class=3D"dy vu vv n o"><div class=3D"vw vx"><div class=3D"n" aria-hi=
+dden=3D"false" aria-describedby=3D"publisherMenu" aria-labelledby=3D"publis=
+herMenu"><button aria-expanded=3D"false" aria-label=3D"Publisher Menu" clas=
+s=3D"ea vn ce cf cg ch ci cj ck bq"><div class=3D"vz s" aria-hidden=3D"true=
+"><svg class=3D"vy bo" width=3D"25" height=3D"25"><path d=3D"M5 12.5c0 .55.=
+2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.4=
+1 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39=
+-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.=
+2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41=
+-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.=
+41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1=
+.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.=
+58 1.41z" fill-rule=3D"evenodd"></path></svg></div></button></div></div><di=
+v class=3D"ir wa s"><div class=3D"vw vx"><div class=3D"ca" aria-hidden=3D"f=
+alse" aria-describedby=3D"searchResults" aria-labelledby=3D"searchResults">=
+<div class=3D"n"><button class=3D"ea eb ce cf cg ch ci cj ck bq wi wj cl wk=
+ wl" aria-label=3D"Search"><span class=3D"vz s"><svg width=3D"25" height=3D=
+"25" viewBox=3D"0 0 25 25" class=3D"vy"><path d=3D"M20.07 18.93l-4.16-4.15a=
+6 6 0 1 0-.88.88l4.15 4.16a.62.62 0 1 0 .89-.89zM6.5 11a4.75 4.75 0 1 1 9.5=
+ 0 4.75 4.75 0 0 1-9.5 0z"></path></svg></span></button><input role=3D"comb=
+obox" aria-controls=3D"searchResults" aria-expanded=3D"false" aria-hidden=
+=3D"true" aria-label=3D"search" tabindex=3D"-1" class=3D"wb wc wd dn bh es =
+we bi wf at em wg wh" placeholder=3D"Search" value=3D""></div></div></div><=
+/div><div class=3D"jv" id=3D"li-post-page-navbar-upsell-button"><div class=
+=3D"dy s g"><div><a class=3D"bf b bg bh bi wm bl bk bm bn bo bp bq br bs bt=
+ bu bv bw bx by bz ca cb" href=3D"https://medium.com/plans?source=3Dupgrade=
+_membership---nav_full-------------------------------------" rel=3D"noopene=
+r follow">Upgrade</a></div></div></div></div><a aria-label=3D"Homepage" hre=
+f=3D"https://medium.com/?source=3Dpost_page-----34c43ce8b93d---------------=
+--------------------" rel=3D"noopener follow"><svg viewBox=3D"0 0 1043.63 5=
+92.71" class=3D"q dj"><g data-name=3D"Layer 2"><g data-name=3D"Layer 1"><pa=
+th d=3D"M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 =
+131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 =
+279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 =
+147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.=
+75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"></path></g></=
+g></svg></a></div></div></div></div></div></div><div class=3D"s"><div class=
+=3D"n p"><div class=3D"au av aw ax ay az ba v"><div class=3D"af ag ah ai aj=
+"><div class=3D"dk dl n o"><div class=3D"s dm"><span class=3D"bf b dn do dp=
+ dq dr ds dt du dv dw dx"><div class=3D"n o"><div class=3D"wn s"><div class=
+=3D"wo wp s"><div class=3D"ca" aria-hidden=3D"false" aria-describedby=3D"co=
+llectionFollowPopover" aria-labelledby=3D"collectionFollowPopover"><button =
+class=3D"bf b bg bh nq bj nr ns ff nt fi bq br bs nu fl bw bx by bz ca cb" =
+aria-controls=3D"collectionFollowPopover" aria-expanded=3D"false"><div clas=
+s=3D"n bc">Follow</div></button></div></div></div><div class=3D"dy dz ao"><=
+span class=3D"bf b dn do dx"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec e=
+d cl ee ef" rel=3D"noopener follow" href=3D"https://towardsdatascience.com/=
+followers?source=3Dpost_page-----34c43ce8b93d------------------------------=
+-----">606K Followers</a></span></div><div class=3D"eg s g">=C2=B7</div><di=
+v class=3D"eg s g"><nav class=3D"n o"><span class=3D"eh n ao"><a class=3D"e=
+a eb ce cf cg ch ci cj ck bq ec ed cl ee ef" rel=3D"noopener follow" href=
+=3D"https://towardsdatascience.com/tagged/editors-pick?source=3Dpost_page--=
+---34c43ce8b93d-----------------------------------">Editors' Picks</a></spa=
+n><span class=3D"eh n ao"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed c=
+l ee ef" rel=3D"noopener follow" href=3D"https://towardsdatascience.com/tag=
+ged/tds-features?source=3Dpost_page-----34c43ce8b93d-----------------------=
+------------">Features</a></span><span class=3D"eh n ao"><a class=3D"ea eb =
+ce cf cg ch ci cj ck bq ec ed cl ee ef" rel=3D"noopener follow" href=3D"htt=
+ps://towardsdatascience.com/tagged/deep-dives?source=3Dpost_page-----34c43c=
+e8b93d-----------------------------------">Deep Dives</a></span><span class=
+=3D"eh n ao"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" rel=
+=3D"noopener follow" href=3D"https://towardsdatascience.com/how-to-get-the-=
+most-out-of-towards-data-science-3bf37f75a345?source=3Dpost_page-----34c43c=
+e8b93d-----------------------------------">Grow</a></span><span class=3D"eh=
+ n ao"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" rel=3D"noo=
+pener follow" href=3D"https://towardsdatascience.com/questions-96667b06af5?=
+source=3Dpost_page-----34c43ce8b93d-----------------------------------">Con=
+tribute</a></span></nav></div><div class=3D"s h"></div><div class=3D"eg n a=
+o g"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" rel=3D"noope=
+ner follow" href=3D"https://towardsdatascience.com/about?source=3Dpost_page=
+-----34c43ce8b93d-----------------------------------">About</a></div></div>=
+</span></div><div class=3D"aq ei ej ar"><button class=3D"n o p ek el em en"=
+ aria-label=3D"Expand navbar"><svg width=3D"14" height=3D"14" class=3D"eo">=
+<path d=3D"M0 .5h14M0 7h14M0 13.5h14"></path></svg></button></div></div></d=
+iv></div></div></div></div><div class=3D"ep eq c er es et eu ev ae ac ew"><=
+div class=3D"n p"><div class=3D"au av aw ax ay az ba v"><div class=3D"ex v =
+ey ez j i d ev ac"><div class=3D"fa n o"><div class=3D"aq cr fb fc"><div cl=
+ass=3D"jv" id=3D"li-ShowPostUnderCollection-navbar-open-in-app-button"><div=
+ class=3D"cc aq ar"><span class=3D"bf b bg bh dx"><a class=3D"fd fe ce cf c=
+g ch ci cj ck bq fg fh cl ue uf" href=3D"https://rsci.app.link/?%24canonica=
+l_url=3Dhttps%3A%2F%2Fmedium.com%2Fp%2F34c43ce8b93d&amp;%7Efeature=3DLiOpen=
+InAppButton&amp;%7Echannel=3DShowPostUnderCollection&amp;%7Estage=3DmobileN=
+avBar&amp;source=3Dpost_page-----34c43ce8b93d------------------------------=
+-----" rel=3D"noopener follow">Open in app</a></span></div></div></div><a a=
+ria-label=3D"Homepage" href=3D"https://medium.com/?source=3Dpost_page-----3=
+4c43ce8b93d-----------------------------------" rel=3D"noopener follow"><sv=
+g viewBox=3D"0 0 1043.63 592.71" class=3D"q r"><g data-name=3D"Layer 2"><g =
+data-name=3D"Layer 1"><path d=3D"M588.67 296.36c0 163.67-131.78 296.35-294.=
+33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.=
+56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279=
+ 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76=
+ 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51=
+.76 249.94"></path></g></g></svg></a></div></div></div></div></div></div><d=
+iv class=3D"jc" role=3D"dialog" aria-modal=3D"true" tabindex=3D"-1"><div cl=
+ass=3D"up uq v fa et ur us en es ge ut" aria-hidden=3D"true" role=3D"presen=
+tation"></div><div class=3D"uu et uv uw ux up fa bz uy uz va ph vb vc ae vd=
+ ve vf vg vh vi" aria-hidden=3D"true"><div class=3D"vj vk n o bc cp"><div c=
+lass=3D"n bc"><h2 class=3D"bf kd vl do gw ht">Responses (2)</h2></div><div =
+class=3D"n bc"><div><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false=
+" aria-describedby=3D"12" aria-labelledby=3D"12"><a class=3D"pg ed" href=3D=
+"https://policy.medium.com/medium-rules-30e5502c4eb4?source=3Dresponses----=
+-34c43ce8b93d-----------------------------------" rel=3D"noopener follow" t=
+arget=3D"_blank"><svg width=3D"25" height=3D"25" viewBox=3D"0 0 25 25"><pat=
+h fill-rule=3D"evenodd" clip-rule=3D"evenodd" d=3D"M11.99 5.04c.26-.21.64-.=
+22.91-.01.97.72 1.77 1.21 2.6 1.54.83.32 1.72.48 2.89.5.41.01.74.35.74.76-.=
+02 3.62-.43 6.26-1.45 8.21-1.03 1.98-2.66 3.21-4.97 4.08a.75.75 0 0 1-.53 0=
+c-2.25-.87-3.86-2.1-4.9-4.07-1.02-1.95-1.46-4.59-1.48-8.22 0-.41.33-.75.75-=
+.76 1.19-.02 2.1-.18 2.92-.5.82-.32 1.6-.81 2.52-1.53zm.46.9c-.9.69-1.71 1.=
+21-2.62 1.56a8.9 8.9 0 0 1-3.02.57c.03 3.45.46 5.82 1.36 7.51.88 1.69 2.25 =
+2.77 4.28 3.57 2.1-.8 3.47-1.89 4.34-3.57.89-1.7 1.3-4.07 1.34-7.51a8.8 8.8=
+ 0 0 1-3-.57 11.8 11.8 0 0 1-2.68-1.56zm0 9.15a2.67 2.67 0 1 0 0-5.34 2.67 =
+2.67 0 0 0 0 5.34zm0 1a3.67 3.67 0 1 0 0-7.34 3.67 3.67 0 0 0 0 7.34zm-1.82=
+-3.77l.53-.53.91.92 1.63-1.63.52.53-2.15 2.15-1.44-1.44z"></path></svg></a>=
+</div></div><div class=3D"s at vm"><div class=3D"s at ev eu"><button class=
+=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" data-testid=3D"close-butt=
+on" aria-label=3D"close"><svg width=3D"25" height=3D"25" viewBox=3D"0 0 25 =
+25" class=3D"vn"><path d=3D"M18.13 6.11l-5.61 5.61-5.6-5.61-.81.8 5.61 5.61=
+-5.61 5.61.8.8 5.61-5.6 5.61 5.6.8-.8-5.6-5.6 5.6-5.62"></path></svg></butt=
+on></div></div></div></div><div class=3D"vo jx n ao p o lm vp"><p class=3D"=
+bf b dn do dx">There are currently no responses for this story.</p><p class=
+=3D"bf b dn do dx">Be the first to respond.</p></div></div></div><article><=
+section class=3D"fn fo fp fq fr fs ft v fu bz s"></section><span class=3D"s=
+"></span><div><div><div class=3D"ei er ug gc gd ge"></div><section class=3D=
+"gf gg gh du gi"><div class=3D"n p"><div class=3D"au av aw ax ay gj ba v"><=
+h2 id=3D"f5c7" class=3D"gk gl gm bf b gn go gp gq gr gs gt dx gu" data-sele=
+ctable-paragraph=3D""><a class=3D"ea cb" href=3D"https://towardsdatascience=
+.com/tagged/getting-started" rel=3D"noopener" target=3D"_blank">Getting Sta=
+rted</a></h2><div class=3D""><h1 id=3D"8fb3" class=3D"gv gw gm bf gx gy gz =
+ha hb hc hd he hf hg hh hi hj hk hl hm hn ho hp hq hr hs ht" data-selectabl=
+e-paragraph=3D"">Mistakes in Applying Univariate Feature Selection Methods<=
+/h1></div><div class=3D""><h2 id=3D"4b5c" class=3D"hu gw gm bf b hv hw hx h=
+y hz ia ib ic id ie if ig ih ii ij ik dx" data-selectable-paragraph=3D"">Wh=
+en to apply Regression F-score, ANOVA and Chi-squared test to continuous an=
+d categorical features?</h2><div class=3D"db"><div class=3D"n cp il im in">=
+<div class=3D"o n"><div><a href=3D"https://medium.com/@waijean?source=3Dpos=
+t_page-----34c43ce8b93d-----------------------------------" rel=3D"noopener=
+ follow"><img alt=3D"Wai Jean" class=3D"s io ip iq" src=3D"https://miro.med=
+ium.com/fit/c/56/56/1*70B9-NjV7oUnoovDPbmCeA.jpeg" width=3D"28" height=3D"2=
+8"></a></div><div class=3D"ir v n cy"><div class=3D"n"><div style=3D"flex:1=
+"><span class=3D"bf b bg bh ht"><div><div class=3D"ca" role=3D"tooltip" ari=
+a-hidden=3D"false" aria-describedby=3D"6" aria-labelledby=3D"6"><a class=3D=
+"" href=3D"https://medium.com/@waijean?source=3Dpost_page-----34c43ce8b93d-=
+----------------------------------" rel=3D"noopener follow"><p class=3D"bf =
+b bg bh fd">Wai Jean</p></a></div></div></span></div></div><span class=3D"b=
+f b bg bh dx"><a class=3D"" rel=3D"noopener follow" href=3D"https://towards=
+datascience.com/mistakes-in-applying-univariate-feature-selection-methods-3=
+4c43ce8b93d?source=3Dpost_page-----34c43ce8b93d----------------------------=
+-------"><p class=3D"bf b bg bh dx"><span class=3D"is"></span><span>Nov 20,=
+ 2020</span><span class=3D"it">=C2=B7</span>8 min read</p></a></span></div>=
+</div><div class=3D"n iu iv iw ix iy iz ja jb jc"><div class=3D"n o"><div c=
+lass=3D"wr s z"><div><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"fals=
+e" aria-describedby=3D"217" aria-labelledby=3D"217"><button class=3D"ea eb =
+ce cf cg ch ci cj ck bq ec ed cl ee ef" aria-label=3D"Share on twitter"><sv=
+g width=3D"30" height=3D"30" viewBox=3D"0 0 30 30" fill=3D"none" class=3D"v=
+n ws"><path fill-rule=3D"evenodd" clip-rule=3D"evenodd" d=3D"M15 27a12 12 0=
+ 1 0 0-24 12 12 0 0 0 0 24zm4.95-16.17a2.67 2.67 0 0 0-4.6 1.84c0 .2.03.41.=
+05.62a7.6 7.6 0 0 1-5.49-2.82 3 3 0 0 0-.38 1.34c.02.94.49 1.76 1.2 2.23a2.=
+53 2.53 0 0 1-1.2-.33v.04c0 1.28.92 2.36 2.14 2.62-.23.05-.46.08-.71.1l-.21=
+-.02-.27-.03a2.68 2.68 0 0 0 2.48 1.86A5.64 5.64 0 0 1 9 19.38a7.62 7.62 0 =
+0 0 4.1 1.19c4.9 0 7.58-4.07 7.57-7.58v-.39c.52-.36.97-.83 1.33-1.38-.48.23=
+-1 .37-1.53.43.56-.33.96-.86 1.15-1.48-.5.31-1.07.53-1.67.66z" fill=3D"#292=
+929"></path></svg></button></div></div></div><div class=3D"wr s z"><div><di=
+v class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"2=
+18" aria-labelledby=3D"218"><button class=3D"ea eb ce cf cg ch ci cj ck bq =
+ec ed cl ee ef" aria-label=3D"Share on facebook"><svg width=3D"30" height=
+=3D"30" viewBox=3D"0 0 30 30" fill=3D"none" class=3D"vn ws"><path fill-rule=
+=3D"evenodd" clip-rule=3D"evenodd" d=3D"M15 27a12 12 0 1 0 0-24 12 12 0 0 0=
+ 0 24zm-1.23-6.03V15.6H12v-2.15h1.77v-1.6C13.77 10 14.85 9 16.42 9c.75 0 1.=
+4.06 1.58.08v1.93h-1.09c-.85 0-1.02.43-1.02 1.05v1.38h2.04l-.27 2.15H15.9V2=
+1l-2.13-.03z" fill=3D"#292929"></path></svg></button></div></div></div><div=
+ class=3D"wr s z"><div><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"fa=
+lse" aria-describedby=3D"219" aria-labelledby=3D"219"><button class=3D"ea e=
+b ce cf cg ch ci cj ck bq ec ed cl ee ef" aria-label=3D"Share on linkedin">=
+<svg width=3D"30" height=3D"30" viewBox=3D"0 0 30 30" fill=3D"none" class=
+=3D"vn ws"><path fill-rule=3D"evenodd" clip-rule=3D"evenodd" d=3D"M27 15a12=
+ 12 0 1 1-24 0 12 12 0 0 1 24 0zm-14.61 5v-7.42h-2.26V20h2.26zm-1.13-8.44c.=
+79 0 1.28-.57 1.28-1.28-.02-.73-.5-1.28-1.26-1.28-.78 0-1.28.55-1.28 1.28 0=
+ .71.49 1.28 1.25 1.28h.01zM15.88 20h-2.5s.04-6.5 0-7.17h2.5v1.02l-.02.02h.=
+02v-.02a2.5 2.5 0 0 1 2.25-1.18c1.64 0 2.87 1.02 2.87 3.22V20h-2.5v-3.83c0-=
+.97-.36-1.62-1.26-1.62-.69 0-1.1.44-1.28.87-.06.15-.08.36-.08.58v4z" fill=
+=3D"#292929"></path></svg></button></div></div></div><div class=3D"s z"><di=
+v><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=
+=3D"220" aria-labelledby=3D"220"><button class=3D"ea eb ce cf cg ch ci cj c=
+k bq ec ed cl ee ef"><svg width=3D"30" height=3D"30" viewBox=3D"0 0 30 30" =
+fill=3D"none" class=3D"vn ws"><path fill-rule=3D"evenodd" clip-rule=3D"even=
+odd" d=3D"M15 27a12 12 0 1 0 0-24 12 12 0 0 0 0 24zM9.29 16.28c-.2.36-.29.7=
+5-.29 1.17a2.57 2.57 0 0 0 .78 1.84l1.01.96c.53.5 1.17.75 1.92.75s1.38-.25 =
+1.9-.75l1.2-1.15.75-.71.51-.5a2.51 2.51 0 0 0 .72-2.34.7.7 0 0 0-.03-.18 2.=
+74 2.74 0 0 0-.23-.5v-.02l-.08-.14-.02-.03-.02-.01a.33.33 0 0 0-.07-.1c0-.0=
+2-.01-.03-.03-.05a.2.2 0 0 0-.03-.03l-.03-.04v-.01l-.02-.03-.04-.03a.85.85 =
+0 0 1-.13-.13l-.43-.42-.06.06-.9.84-.05.09a.26.26 0 0 0-.03.1l.37.38c.04.03=
+.08.07.1.11l.01.01.01.03.02.01.04.1.03.04.06.1v.02l.01.02c.03.1.05.2.05.33a=
+1 1 0 0 1-.12.49c-.07.13-.15.22-.22.29l-.88.85-.61.57-.95.92c-.22.2-.5.3-.8=
+2.3-.31 0-.58-.1-.8-.3l-.98-.96a1.15 1.15 0 0 1-.3-.42 1.4 1.4 0 0 1-.04-.3=
+5c0-.1.01-.2.04-.3a1 1 0 0 1 .3-.49l1.5-1.46v-.24c0-.21 0-.42.04-.6a3.5 3.5=
+ 0 0 1 .92-1.72c-.41.1-.78.32-1.11.62l-.01.02-.01.01-2.46 2.33c-.2.21-.35.4=
+-.44.6h-.02c0 .02 0 .02-.02.02v.02l-.01.01zm3.92-1.8a1.83 1.83 0 0 0 .02.97=
+c0 .06 0 .13.02.19.06.17.14.34.22.5v.02l.06.12.02.03.01.02.08.1c0 .02.02.03=
+.04.05l.08.1h.01c0 .01 0 .03.02.03l.14.14.43.41.08-.06.88-.84.05-.09.03-.1-=
+.36-.37a.4.4 0 0 1-.12-.13v-.02l-.02-.02-.05-.09-.04-.04-.04-.1v-.02l-.02-.=
+02a1.16 1.16 0 0 1 .06-.82c.09-.14.16-.24.23-.3l.9-.85.6-.58.93-.92c.23-.2.=
+5-.3.82-.3a1.2 1.2 0 0 1 .82.3l1 .96c.13.15.23.29.28.42a1.43 1.43 0 0 1 0 .=
+66c-.03.17-.12.33-.26.48l-1.54 1.45.02.25a3.28 3.28 0 0 1-.96 2.32 2.5 2.5 =
+0 0 0 1.1-.62l.01-.01 2.46-2.34c.19-.2.35-.4.46-.6l.02-.02v-.02h.01a2.45 2.=
+45 0 0 0 .21-1.82 2.53 2.53 0 0 0-.7-1.19l-1-.96a2.68 2.68 0 0 0-1.91-.75c-=
+.75 0-1.38.25-1.9.76l-1.2 1.14-.76.72-.5.49c-.4.37-.64.83-.74 1.37z" fill=
+=3D"#292929"></path></svg></button></div></div></div><div class=3D"jd s"><d=
+iv><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedb=
+y=3D"69" aria-labelledby=3D"69"><div><div class=3D"ca" role=3D"tooltip" ari=
+a-hidden=3D"false" aria-describedby=3D"70" aria-labelledby=3D"70"><div clas=
+s=3D"ca v" aria-hidden=3D"false"><button aria-controls=3D"addToCatalogBookm=
+arkButton" aria-expanded=3D"false" aria-label=3D"Add to list bookmark butto=
+n" class=3D"ea vn ce cf cg ch ci cj ck bq"><svg width=3D"25" height=3D"25" =
+viewBox=3D"0 0 25 25" fill=3D"none" class=3D"wq"><path d=3D"M18 2.5a.5.5 0 =
+0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18=
+V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8=
+.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 =
+0 0-.6 0l-5.2 4V7z" fill=3D"#292929"></path></svg></button></div></div></di=
+v></div></div></div><div class=3D"s"><div class=3D"ca" aria-hidden=3D"false=
+"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" aria-label=
+=3D"More options"><svg class=3D"overflow-dots-filled-25px_svg__svgIcon-use"=
+ width=3D"25" height=3D"25"><path d=3D"M5 12.5c0 .55.2 1.02.59 1.41.39.4.86=
+.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.=
+41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62=
+ 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.8=
+6.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.4=
+2.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.5=
+6 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93=
+ 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z" fill-rule=3D=
+"evenodd"></path></svg></button></div></div></div></div></div></div></div><=
+figure class=3D"jf jg fs ft paragraph-image"><div role=3D"button" tabindex=
+=3D"0" class=3D"jh ji at jj v jk"><div class=3D"fs ft je"><div class=3D"jp =
+s at jq"><div class=3D"jr js s"><div class=3D"es jl ei ev er fa v jm jn jo"=
+><img alt=3D"" class=3D"ei ev er fa v jt ju jv" src=3D"https://miro.medium.=
+com/max/60/0*pqMzSS33t7JxKJTC?q=3D20" width=3D"700" height=3D"471" role=3D"=
+presentation"></div><img alt=3D"" class=3D"es jl ei ev er fa v c" width=3D"=
+700" height=3D"471" role=3D"presentation"></div></div></div></div><figcapti=
+on class=3D"jw jx fu fs ft jy jz bf b bg bh dx" data-selectable-paragraph=
+=3D"">Photo by <a class=3D"ea ka" href=3D"https://unsplash.com/@santabarbar=
+a77?utm_source=3Dmedium&amp;utm_medium=3Dreferral" rel=3D"noopener ugc nofo=
+llow" target=3D"_blank">Varvara Grabova</a> on <a class=3D"ea ka" href=3D"h=
+ttps://unsplash.com/?utm_source=3Dmedium&amp;utm_medium=3Dreferral" rel=3D"=
+noopener ugc nofollow" target=3D"_blank">Unsplash</a></figcaption></figure>=
+<h2 id=3D"41ec" class=3D"kb kc gm bf kd ke kf hx kg kh ki ia kj ib kk id kl=
+ ie km ig kn ih ko ij kp gt ht" data-selectable-paragraph=3D"">Context</h2>=
+<p id=3D"1c63" class=3D"kq kr gm ks b hv kt ku kv hy kw kx ky kz la lb lc l=
+d le lf lg lh li lj lk ll gf ht" data-selectable-paragraph=3D"">In Python s=
+cikit-learn library, there are various univariate feature selection methods=
+ such as Regression F-score, ANOVA and Chi-squared. Perhaps due to the ease=
+ of applying these methods <em class=3D"lm">(sometimes with just a single l=
+ine of code)</em>, it might be tempting to just use these methods without t=
+aking into consideration the type of features you have.</p><p id=3D"4036" c=
+lass=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr=
+ lj lk ll gf ht" data-selectable-paragraph=3D"">I have seen some machine le=
+arning practitioners took this for granted and made this mistake (including=
+ myself). By documenting it here, I hope others can learn from my mistake t=
+oo :)</p><h2 id=3D"873e" class=3D"kb kc gm bf kd ke kf hx kg kh ki ia kj ib=
+ kk id kl ie km ig kn ih ko ij kp gt ht" data-selectable-paragraph=3D"">Pro=
+blem Statement</h2><p id=3D"49c3" class=3D"kq kr gm ks b hv kt ku kv hy kw =
+kx ky kz la lb lc ld le lf lg lh li lj lk ll gf ht" data-selectable-paragra=
+ph=3D"">While <a class=3D"ea ka" href=3D"https://scikit-learn.org/stable/mo=
+dules/feature_selection.html#univariate-feature-selection" rel=3D"noopener =
+ugc nofollow" target=3D"_blank">the sciki<span id=3D"rmm"><span id=3D"rmm">=
+<span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span i=
+d=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rm=
+m"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><spa=
+n id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D=
+"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><span id=3D"rmm"><=
+span id=3D"rmm">t</span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span>-learn documentation</a> is clear=
+ on which feature selection method should be used for <strong class=3D"ks g=
+x"><em class=3D"lm">regression </em></strong>and<strong class=3D"ks gx"><em=
+ class=3D"lm"> classification</em></strong>, it does not specify whether th=
+ese methods are suitable to apply to both <strong class=3D"ks gx"><em class=
+=3D"lm">continuous</em></strong> and <strong class=3D"ks gx"><em class=3D"l=
+m">categorical</em></strong> features. (Spoiler: The answer is no!)</p><fig=
+ure class=3D"lt lu lv lw lx jg fs ft paragraph-image"><div role=3D"button" =
+tabindex=3D"0" class=3D"jh ji at jj v jk"><div class=3D"fs ft ls"><div clas=
+s=3D"jp s at jq"><div class=3D"ly js s"><div class=3D"es jl ei ev er fa v j=
+m jn jo"><img alt=3D"" class=3D"ei ev er fa v jt ju jv" src=3D"https://miro=
+.medium.com/max/60/0*AlPM6zvQkrkFGI4s?q=3D20" width=3D"700" height=3D"154" =
+role=3D"presentation"></div><img alt=3D"" class=3D"es jl ei ev er fa v c" w=
+idth=3D"700" height=3D"154" role=3D"presentation"></div></div></div></div><=
+figcaption class=3D"jw jx fu fs ft jy jz bf b bg bh dx" data-selectable-par=
+agraph=3D"">Image by author: scikit-learn<em class=3D"lz"> documentation on=
+ univariate feature selection</em></figcaption></figure><p id=3D"b7b4" clas=
+s=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj=
+ lk ll gf ht" data-selectable-paragraph=3D"">Let=E2=80=99s say you have a c=
+lassification task and after reading the documentation, you know you should=
+ use either Chi-squared test or ANOVA. However, if you have <strong class=
+=3D"ks gx"><em class=3D"lm">continuous</em></strong> features, can you use =
+the Chi-squared test? Alternatively, if you have <strong class=3D"ks gx"><e=
+m class=3D"lm">categorical</em></strong> features, should you use ANOVA? If=
+ you have both types of features in your dataset, which method should you u=
+se?</p><p id=3D"b99b" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp =
+lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">Thes=
+e are the questions I wish to answer in this article. I will look at these =
+three methods (Regression F-score, ANOVA and Chi-squared) in turn and attem=
+pt to answer these two questions:</p><ol class=3D""><li id=3D"13db" class=
+=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj =
+lk ll ma mb mc ht" data-selectable-paragraph=3D""><strong class=3D"ks gx"><=
+em class=3D"lm">Which type of features </em></strong>is suitable for the te=
+st?</li><li id=3D"3518" class=3D"kq kr gm ks b hv md ku kv hy me kx ky kz m=
+f lb lc ld mg lf lg lh mh lj lk ll ma mb mc ht" data-selectable-paragraph=
+=3D"">Is there any <strong class=3D"ks gx"><em class=3D"lm">pre-processing<=
+/em></strong> required to be done before using the test?</li></ol><p id=3D"=
+7a18" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf l=
+g lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">I tried to avoid goi=
+ng into details on how these methods work under the hood as there are alrea=
+dy some great articles written on this (which I have provided the link in e=
+ach section below). The only exception is Regression F-score, which is surp=
+risingly hard to find any good articles written on this technique. I will b=
+riefly touch on this since it is actually a very simple concept which can b=
+e explained in less than <em class=3D"lm">15 lines of codes</em>.</p><p id=
+=3D"3e7d" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq =
+lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">I have provided =
+a quick summary table on which <strong class=3D"ks gx"><em class=3D"lm">uni=
+variate </em></strong>feature selection method you should use in each case.=
+</p><figure class=3D"lt lu lv lw lx jg fs ft paragraph-image"><div class=3D=
+"fs ft mi"><div class=3D"jp s at jq"><div class=3D"mj js s"><div class=3D"e=
+s jl ei ev er fa v jm jn jo"><img alt=3D"" class=3D"ei ev er fa v jt ju jv"=
+ src=3D"https://miro.medium.com/max/60/1*b645U4bvSqa2L3m88hkEVQ.png?q=3D20"=
+ width=3D"625" height=3D"218" role=3D"presentation"></div><img alt=3D"" cla=
+ss=3D"es jl ei ev er fa v c" width=3D"625" height=3D"218" role=3D"presentat=
+ion"></div></div></div><figcaption class=3D"jw jx fu fs ft jy jz bf b bg bh=
+ dx" data-selectable-paragraph=3D"">Image by author: Summary table for univ=
+ariate feature selection methods in the scikit-learn library</figcaption></=
+figure><p id=3D"0492" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp =
+lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D""><em =
+class=3D"lm">Note:</em></p><ol class=3D""><li id=3D"f0a3" class=3D"kq kr gm=
+ ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll ma mb =
+mc ht" data-selectable-paragraph=3D""><em class=3D"lm">I only cover these t=
+hree methods because they are available in the scikit-learn library and hen=
+ce relatively easy to implement.</em></li><li id=3D"8018" class=3D"kq kr gm=
+ ks b hv md ku kv hy me kx ky kz mf lb lc ld mg lf lg lh mh lj lk ll ma mb =
+mc ht" data-selectable-paragraph=3D""><em class=3D"lm">I bet you will be wo=
+ndering why is there a gap for </em><strong class=3D"ks gx"><em class=3D"lm=
+">(Regression, Categorical) </em></strong><em class=3D"lm">cell. Well, keep=
+ on reading and you will know the answer.</em></li></ol><p id=3D"b030" clas=
+s=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj=
+ lk ll gf ht" data-selectable-paragraph=3D"">The reason these tests are cal=
+led <strong class=3D"ks gx"><em class=3D"lm">univariate</em> </strong>tests=
+<strong class=3D"ks gx"> </strong>is that they do not look at all the featu=
+res <strong class=3D"ks gx">collectively</strong>. In particular, it does n=
+ot take into account the<strong class=3D"ks gx"> interaction between featur=
+es. </strong>Instead, it looks at each feature <strong class=3D"ks gx">sepa=
+rately</strong> and determines whether there is a significant relationship =
+between that feature and the target. So if you have 10 features, the test w=
+ill be repeated for each of the 10 features, one at a time, giving you a li=
+st of 10 scores/p-values.</p><h2 id=3D"bd6c" class=3D"kb kc gm bf kd ke kf =
+hx kg kh ki ia kj ib kk id kl ie km ig kn ih ko ij kp gt ht" data-selectabl=
+e-paragraph=3D"">Linear Regression F-test (<a class=3D"ea ka" href=3D"https=
+://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_re=
+gression.html#sklearn.feature_selection.f_regression" rel=3D"noopener ugc n=
+ofollow" target=3D"_blank">f_regression</a>)</h2><p id=3D"ff33" class=3D"kq=
+ kr gm ks b hv kt ku kv hy kw kx ky kz la lb lc ld le lf lg lh li lj lk ll =
+gf ht" data-selectable-paragraph=3D"">To understand this test, we need a br=
+ief recap of <strong class=3D"ks gx">linear regression</strong>. In general=
+, the Regression F-test is used to test whether the regression model fits t=
+he data better than the model with no feature.</p><p id=3D"e2fd" class=3D"k=
+q kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll=
+ gf ht" data-selectable-paragraph=3D"">In the case of <strong class=3D"ks g=
+x">simple linear regression</strong> (regression with a <strong class=3D"ks=
+ gx">single feature</strong>), this is equivalent to testing whether there =
+is any significant linear relationship between that feature and the target.=
+ In particular, the p-value for the F-test is equivalent to the p-value for=
+ the t-test on slope coefficient.</p><p id=3D"d09e" class=3D"kq kr gm ks b =
+hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-=
+selectable-paragraph=3D"">And this is the idea behind the scikit-learn <em =
+class=3D"lm">f_regression</em> method:</p><blockquote class=3D"mk ml mm"><p=
+ id=3D"965a" class=3D"kq kr lm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld =
+lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">It breaks you=
+r group of features into several <strong class=3D"ks gx">simple linear regr=
+ession</strong> models and returns the F-score of that model as the F-score=
+ for that feature.</p></blockquote><p id=3D"478d" class=3D"kq kr gm ks b hv=
+ ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-se=
+lectable-paragraph=3D"">You can check this quite easily using a few lines o=
+f codes.</p><figure class=3D"lt lu lv lw lx jg"><div class=3D"jp s at"><div=
+ class=3D"mn js s"></div></div></figure><p id=3D"bc5c" class=3D"kq kr gm ks=
+ b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" da=
+ta-selectable-paragraph=3D"">As a rule of thumb, you should only use this t=
+est if your features are <strong class=3D"ks gx"><em class=3D"lm">continuou=
+s</em></strong>. The <strong class=3D"ks gx"><em class=3D"lm">special case<=
+/em></strong> where you can use this test for <strong class=3D"ks gx"><em c=
+lass=3D"lm">categorical features</em></strong> is when you can <strong clas=
+s=3D"ks gx"><em class=3D"lm">treat</em> <em class=3D"lm">it as a continuous=
+ feature</em></strong>. In particular, it needs to satisfy these two condit=
+ions:</p><ol class=3D""><li id=3D"c41e" class=3D"kq kr gm ks b hv ln ku kv =
+hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll ma mb mc ht" data-select=
+able-paragraph=3D"">There is a <strong class=3D"ks gx"><em class=3D"lm">cle=
+ar ordering</em></strong> of the categories. For example, economic status w=
+ith three categories (low, medium and high).</li><li id=3D"11fb" class=3D"k=
+q kr gm ks b hv md ku kv hy me kx ky kz mf lb lc ld mg lf lg lh mh lj lk ll=
+ ma mb mc ht" data-selectable-paragraph=3D"">The <strong class=3D"ks gx"><e=
+m class=3D"lm">average changes of the target</em></strong> <strong class=3D=
+"ks gx"><em class=3D"lm">from one category to the next are the same.</em></=
+strong> For example, the average house price change from low to medium econ=
+omic status is the same as that from medium to high economic status.</li></=
+ol><p id=3D"5b8d" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb l=
+c ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">Most of =
+the time you wouldn=E2=80=99t know whether the second condition is satisfie=
+d so it=E2=80=99s better to stick with the rule of thumb.</p><blockquote cl=
+ass=3D"mk ml mm"><p id=3D"9b9c" class=3D"kq kr lm ks b hv ln ku kv hy lo kx=
+ ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=
+=3D"">Use linear regression F-test when you want to select <strong class=3D=
+"ks gx">continuous features</strong> in a <strong class=3D"ks gx">regressio=
+n</strong> problem.</p></blockquote><p id=3D"d047" class=3D"kq kr gm ks b h=
+v ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-s=
+electable-paragraph=3D"">Warning: This test only verifies whether there is =
+a <strong class=3D"ks gx"><em class=3D"lm">linear relationship</em></strong=
+> between each feature and the target. It will fail to capture any <strong =
+class=3D"ks gx"><em class=3D"lm">non-linear relationship</em></strong><em c=
+lass=3D"lm">. </em>If you wish to test a non-linear relationship, then you =
+need to apply some feature transformation on your original features.</p><h2=
+ id=3D"457f" class=3D"kb kc gm bf kd ke kf hx kg kh ki ia kj ib kk id kl ie=
+ km ig kn ih ko ij kp gt ht" data-selectable-paragraph=3D"">ANOVA F-test (<=
+a class=3D"ea ka" href=3D"https://scikit-learn.org/stable/modules/generated=
+/sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_class=
+if" rel=3D"noopener ugc nofollow" target=3D"_blank">f_classif</a>)</h2><p i=
+d=3D"1800" class=3D"kq kr gm ks b hv kt ku kv hy kw kx ky kz la lb lc ld le=
+ lf lg lh li lj lk ll gf ht" data-selectable-paragraph=3D"">In statistics, =
+ANOVA is used to determine whether there is any statistically significant d=
+ifference between the means of two or more groups. This is particularly use=
+ful in a classification problem where we want to know how well a continuous=
+ feature discriminates between multiple classes.</p><p id=3D"fb25" class=3D=
+"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk =
+ll gf ht" data-selectable-paragraph=3D"">For example, using the iris datase=
+t, you might want to test whether the sepal length helps to discriminate be=
+tween the three species.</p><blockquote class=3D"mk ml mm"><p id=3D"5d26" c=
+lass=3D"kq kr lm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr=
+ lj lk ll gf ht" data-selectable-paragraph=3D"">ANOVA compares the variatio=
+n <strong class=3D"ks gx">between</strong> each species to the variation <s=
+trong class=3D"ks gx">within</strong> each species. By making some statisti=
+cal assumptions, we can show that the <strong class=3D"ks gx">ratio between=
+ the two variations</strong> follows the F-distribution, which gives us a n=
+ice F-score and p-value to evaluate.</p></blockquote><figure class=3D"lt lu=
+ lv lw lx jg fs ft paragraph-image"><div class=3D"fs ft mo"><div class=3D"j=
+p s at jq"><div class=3D"mp js s"><div class=3D"es jl ei ev er fa v jm jn j=
+o"><img alt=3D"" class=3D"ei ev er fa v jt ju jv" src=3D"https://miro.mediu=
+m.com/max/60/1*wLZMSJxHofLh082sGf2XyQ.png?q=3D20" width=3D"600" height=3D"5=
+00" role=3D"presentation"></div><img alt=3D"" class=3D"es jl ei ev er fa v =
+c" width=3D"600" height=3D"500" role=3D"presentation"></div></div></div><fi=
+gcaption class=3D"jw jx fu fs ft jy jz bf b bg bh dx" data-selectable-parag=
+raph=3D"">Image by author: Kernel density plot for sepal length across diff=
+erent species</figcaption></figure><p id=3D"438b" class=3D"kq kr gm ks b hv=
+ ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-se=
+lectable-paragraph=3D"">There is a clear explanation <a class=3D"ea ka" hre=
+f=3D"https://datascience.stackexchange.com/questions/74465/how-to-understan=
+d-anova-f-for-feature-selection-in-python-sklearn-selectkbest-w" rel=3D"noo=
+pener ugc nofollow" target=3D"_blank">here</a> on how the ANOVA F-test is i=
+mplemented. It provides an intuitive explanation behind the methodology <em=
+ class=3D"lm">in the context of classification</em> and works through an ex=
+ample on computing the F-score, which reconciles with the F-score output fr=
+om scikit-learn <em class=3D"lm">f_classif</em> method.</p><p id=3D"3539" c=
+lass=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr=
+ lj lk ll gf ht" data-selectable-paragraph=3D"">By now, you should be able =
+to understand why it doesn=E2=80=99t make sense to use ANOVA F-test to eval=
+uate <strong class=3D"ks gx">categorical features</strong> in a <strong cla=
+ss=3D"ks gx">classification</strong> problem. Because you can=E2=80=99t cal=
+culate the means and variance of categorical features!</p><p id=3D"c103" cl=
+ass=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr =
+lj lk ll gf ht" data-selectable-paragraph=3D"">To make this clearer, imagin=
+e you have a <strong class=3D"ks gx"><em class=3D"lm">colour </em></strong>=
+feature for the iris dataset which can be either yellow, green or blue. Can=
+ you calculate the mean and variance of <strong class=3D"ks gx"><em class=
+=3D"lm">colour</em></strong><em class=3D"lm"> </em>for each species? <em cl=
+ass=3D"lm">(If you can, I am all ears.)</em></p><blockquote class=3D"mk ml =
+mm"><p id=3D"3ee3" class=3D"kq kr lm ks b hv ln ku kv hy lo kx ky kz lp lb =
+lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">Use ANO=
+VA F-test when you want to select <strong class=3D"ks gx">continuous featur=
+es</strong> in a <strong class=3D"ks gx">classification</strong> problem.</=
+p></blockquote><p id=3D"79d6" class=3D"kq kr gm ks b hv ln ku kv hy lo kx k=
+y kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=
+=3D"">Warning: Remember the =E2=80=9Cstatistical assumptions=E2=80=9D I bri=
+efly mentioned above? It turns out that ANOVA F-test has a strict requireme=
+nt that all groups share a common variance (even when their means are diffe=
+rent). If your groups have unequal variances, the test can be invalid. The =
+solution to this is to use Welch=E2=80=99s ANOVA, which does not assume tha=
+t the variances are equal. You can learn more about it <a class=3D"ea ka" h=
+ref=3D"https://www.statisticshowto.com/welchs-anova/" rel=3D"noopener ugc n=
+ofollow" target=3D"_blank">here</a>.</p><p id=3D"23ba" class=3D"kq kr gm ks=
+ b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" da=
+ta-selectable-paragraph=3D"">Cool, does this mean we can=E2=80=99t evaluate=
+ <strong class=3D"ks gx">categorical features</strong> in a <strong class=
+=3D"ks gx">classification</strong> problem? This leads us nicely into the n=
+ext section.</p><h2 id=3D"51eb" class=3D"kb kc gm bf kd ke kf hx kg kh ki i=
+a kj ib kk id kl ie km ig kn ih ko ij kp gt ht" data-selectable-paragraph=
+=3D"">Chi-squared test (<a class=3D"ea ka" href=3D"https://scikit-learn.org=
+/stable/modules/generated/sklearn.feature_selection.chi2.html#sklearn.featu=
+re_selection.chi2" rel=3D"noopener ugc nofollow" target=3D"_blank">chi2</a>=
+)</h2><p id=3D"ea4b" class=3D"kq kr gm ks b hv kt ku kv hy kw kx ky kz la l=
+b lc ld le lf lg lh li lj lk ll gf ht" data-selectable-paragraph=3D"">The C=
+hi-squared test is a statistical test of independence to determine whether =
+two categorical variables are independent.</p><p id=3D"cdb7" class=3D"kq kr=
+ gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf =
+ht" data-selectable-paragraph=3D"">There is a clear explanation of the impl=
+ementation of the Chi-squared test <a class=3D"ea ka" rel=3D"noopener" targ=
+et=3D"_blank" href=3D"https://towardsdatascience.com/chi-square-test-for-fe=
+ature-selection-in-machine-learning-206b1f0b8223">here</a>. The concept is =
+very simple: If the feature is <strong class=3D"ks gx"><em class=3D"lm">ind=
+ependent</em></strong> of the target, then the feature will likely <strong =
+class=3D"ks gx"><em class=3D"lm">not be useful </em></strong>in predicting =
+the target. If they are <strong class=3D"ks gx"><em class=3D"lm">not indepe=
+ndent</em></strong>, then the feature will most likely have predictive powe=
+r on the target.</p><p id=3D"9aec" class=3D"kq kr gm ks b hv ln ku kv hy lo=
+ kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragr=
+aph=3D"">To conduct this test, we have to first construct a <strong class=
+=3D"ks gx"><em class=3D"lm">contingency table</em></strong>. Don=E2=80=99t =
+worry, this is just a fancy name of the frequency count table for each uniq=
+ue combination of the two categorical variables. Using the titanic dataset =
+as an example, the contingency table for gender feature and the target will=
+ look like this:</p><figure class=3D"lt lu lv lw lx jg fs ft paragraph-imag=
+e"><div class=3D"fs ft mq"><div class=3D"jp s at jq"><div class=3D"mr js s"=
+><div class=3D"es jl ei ev er fa v jm jn jo"><img alt=3D"" class=3D"ei ev e=
+r fa v jt ju jv" src=3D"https://miro.medium.com/max/60/1*wpA221IYldc8k76Ptq=
+SWOg.png?q=3D20" width=3D"569" height=3D"157" role=3D"presentation"></div><=
+img alt=3D"" class=3D"es jl ei ev er fa v c" width=3D"569" height=3D"157" r=
+ole=3D"presentation"></div></div></div><figcaption class=3D"jw jx fu fs ft =
+jy jz bf b bg bh dx" data-selectable-paragraph=3D"">Image by author: Exampl=
+e of a contingency table for gender vs survival</figcaption></figure><p id=
+=3D"c10c" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq =
+lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">The intuition be=
+hind the test goes like this:</p><blockquote class=3D"mk ml mm"><p id=3D"7d=
+f1" class=3D"kq kr lm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg =
+lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">If gender and survival=
+ are indeed independent, then I should <strong class=3D"ks gx">expect</stro=
+ng> the same proportion of Survived vs Not Survived across males and female=
+s. And if what I <strong class=3D"ks gx">observe</strong> differs significa=
+ntly from what I <strong class=3D"ks gx">expect</strong>, then I can conclu=
+de that they are not independent.</p></blockquote><p id=3D"549b" class=3D"k=
+q kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll=
+ gf ht" data-selectable-paragraph=3D"">However, there is a requirement for =
+this test: The majority (80%) of the cells in the contingency table should =
+have a frequency count of 5 or more. And this is exactly why the Chi-square=
+d test wouldn=E2=80=99t work for <strong class=3D"ks gx"><em class=3D"lm">c=
+ontinuous</em></strong> features in a <strong class=3D"ks gx"><em class=3D"=
+lm">classification</em></strong> problem.</p><p id=3D"4959" class=3D"kq kr =
+gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf h=
+t" data-selectable-paragraph=3D"">As a thought experiment, imagine you woul=
+d like to evaluate whether passenger fares (a continuous feature) is indepe=
+ndent of survival. Well, you can still construct a contingency table. Howev=
+er, each row in your contingency table will just be a unique value of your =
+passenger fares, and the frequency count will just be 0 or 1 (assuming pass=
+enger fares are distinct).</p><figure class=3D"lt lu lv lw lx jg fs ft para=
+graph-image"><div class=3D"fs ft ms"><div class=3D"jp s at jq"><div class=
+=3D"mt js s"><div class=3D"es jl ei ev er fa v jm jn jo"><img alt=3D"" clas=
+s=3D"ei ev er fa v jt ju jv" src=3D"https://miro.medium.com/max/60/1*-f6MhR=
+thq5iqTqXgPRIWMg.png?q=3D20" width=3D"568" height=3D"300" role=3D"presentat=
+ion"></div><img alt=3D"" class=3D"es jl ei ev er fa v c" width=3D"568" heig=
+ht=3D"300" role=3D"presentation"></div></div></div><figcaption class=3D"jw =
+jx fu fs ft jy jz bf b bg bh dx" data-selectable-paragraph=3D"">Image by au=
+thor: Example of a contingency table for passenger fares vs survival</figca=
+ption></figure><p id=3D"590f" class=3D"kq kr gm ks b hv ln ku kv hy lo kx k=
+y kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=
+=3D"">If you really want to apply Chi-squared test to continuous features, =
+then you should first <strong class=3D"ks gx"><em class=3D"lm">sort the val=
+ues into different bins </em></strong>to =E2=80=9Cconvert=E2=80=9D your con=
+tinuous feature into a categorical feature. Using the example above, perhap=
+s you can divide passenger fares into three groups (low, medium and high).<=
+/p><p id=3D"8da2" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb l=
+c ld lq lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">However,=
+ if your purpose is to run a quick test to see if passenger fares is a good=
+ predictor for the target, it will be much easier to just run ANOVA F-test.=
+</p><blockquote class=3D"mk ml mm"><p id=3D"ba49" class=3D"kq kr lm ks b hv=
+ ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-se=
+lectable-paragraph=3D"">Use Chi-squared test when you want to select <stron=
+g class=3D"ks gx">categorical features</strong> in a <strong class=3D"ks gx=
+">classification</strong> problem.</p></blockquote><p id=3D"86eb" class=3D"=
+kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk l=
+l gf ht" data-selectable-paragraph=3D"">Warning: Do not one-hot encode your=
+ categorical feature before running the Chi-squared test because this will =
+create a binary column for each category and scikit-learn will not treat th=
+is group of binary columns as a single feature.</p><h2 id=3D"d0fc" class=3D=
+"kb kc gm bf kd ke kf hx kg kh ki ia kj ib kk id kl ie km ig kn ih ko ij kp=
+ gt ht" data-selectable-paragraph=3D"">Summary</h2><p id=3D"d4b5" class=3D"=
+kq kr gm ks b hv kt ku kv hy kw kx ky kz la lb lc ld le lf lg lh li lj lk l=
+l gf ht" data-selectable-paragraph=3D"">In this article, we walk through wh=
+en you should apply Regression F-score, ANOVA and Chi-squared tests.</p><p =
+id=3D"bb89" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld l=
+q lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">Not taking int=
+o account the type of features I have is the mistake I made when I first st=
+arted applying statistical tests in the context of machine learning. If you=
+ notice others are applying these methods incorrectly in the future, just k=
+indly point them in the right direction :)</p><p id=3D"fc26" class=3D"kq kr=
+ gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf =
+ht" data-selectable-paragraph=3D"">Most often you will have a combination o=
+f continuous and categorical features. If you wish to use univariate featur=
+e selection methods in this case, just split your dataset into continuous a=
+nd categorical types, and run the appropriate test on each of them.</p><p i=
+d=3D"f945" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq=
+ lf lg lh lr lj lk ll gf ht" data-selectable-paragraph=3D"">Just to reitera=
+te, these tests are <strong class=3D"ks gx"><em class=3D"lm">univariate </e=
+m></strong>feature selection methods. If you wish to take into account the =
+interaction between features, there are more advanced methods such as <a cl=
+ass=3D"ea ka" href=3D"https://en.wikipedia.org/wiki/Two-way_analysis_of_var=
+iance" rel=3D"noopener ugc nofollow" target=3D"_blank">two-way ANOVA</a> an=
+d <a class=3D"ea ka" href=3D"https://en.wikipedia.org/wiki/Lasso_(statistic=
+s)" rel=3D"noopener ugc nofollow" target=3D"_blank">LASSO method</a>.</p></=
+div></div></section><div class=3D"n p db mu mv mw" role=3D"separator"><span=
+ class=3D"mx io ca my mz na"></span><span class=3D"mx io ca my mz na"></spa=
+n><span class=3D"mx io ca my mz"></span></div><section class=3D"gf gg gh du=
+ gi"><div class=3D"n p"><div class=3D"au av aw ax ay gj ba v"><p id=3D"0628=
+" class=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh=
+ lr lj lk ll gf ht" data-selectable-paragraph=3D""><strong class=3D"ks gx">=
+References</strong></p><p id=3D"54cb" class=3D"kq kr gm ks b hv ln ku kv hy=
+ lo kx ky kz lp lb lc ld lq lf lg lh lr lj lk ll gf ht" data-selectable-par=
+agraph=3D"">[1] <a class=3D"ea ka" href=3D"https://scikit-learn.org/stable/=
+modules/feature_selection.html#univariate-feature-selection" rel=3D"noopene=
+r ugc nofollow" target=3D"_blank">https://scikit-learn.org/stable/modules/f=
+eature_selection.html#univariate-feature-selection</a></p><p id=3D"886c" cl=
+ass=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr =
+lj lk ll gf ht" data-selectable-paragraph=3D"">[2] <a class=3D"ea ka" href=
+=3D"https://en.wikipedia.org/wiki/F-test" rel=3D"noopener ugc nofollow" tar=
+get=3D"_blank">https://en.wikipedia.org/wiki/F-test</a></p><p id=3D"5a29" c=
+lass=3D"kq kr gm ks b hv ln ku kv hy lo kx ky kz lp lb lc ld lq lf lg lh lr=
+ lj lk ll gf ht" data-selectable-paragraph=3D"">[3] <a class=3D"ea ka" href=
+=3D"https://libguides.library.kent.edu/spss/chisquare" rel=3D"noopener ugc =
+nofollow" target=3D"_blank">https://libguides.library.kent.edu/spss/chisqua=
+re</a></p></div></div></section></div></div></article><div class=3D"es ge e=
+t ni v xf ev ng nk" data-test-id=3D"post-sidebar"><div class=3D"n p"><div c=
+lass=3D"au av aw ax ay az ba v"><div class=3D"nl n ao"><div class=3D"ge"><d=
+iv><div class=3D"nm s"><div class=3D"nn s"><a class=3D"ea eb ce cf cg ch ci=
+ cj ck bq ec ed cl ee ef" href=3D"https://medium.com/@waijean?source=3Dpost=
+_sidebar--------------------------post_sidebar--------------" rel=3D"noopen=
+er follow"><h2 class=3D"bf kd dn bh gw ht gf">Wai Jean</h2></a></div><div c=
+lass=3D"no s"><p class=3D"bf b bg bh dx">Data Scientist | Linkedin: <a clas=
+s=3D"ea eb ce cf cg ch ci cj ck bq cl ee ef ka gg" href=3D"https://www.link=
+edin.com/in/wai-jean-koh/" rel=3D"noopener follow">https://www.linkedin.com=
+/in/wai-jean-koh/</a></p></div><div class=3D"np n"><button class=3D"bf b bg=
+ bh nq bj nr ns ff nt fi bq br bs nu fl bw bx by bz ca cb">Follow</button><=
+div class=3D"ir s"><div><div><div class=3D"ca" role=3D"tooltip" aria-hidden=
+=3D"false" aria-describedby=3D"383" aria-labelledby=3D"383"><div class=3D"s=
+"><button class=3D"bf b bg bh nq cj nr ns ff nt fi bq br bs nu fl bw bx by =
+bz ca cb" aria-label=3D"Subscribe"><svg width=3D"38" height=3D"38" viewBox=
+=3D"0 0 38 38" fill=3D"none" class=3D"wu nw nx"><rect x=3D"26.25" y=3D"9.25=
+" width=3D"0.5" height=3D"6.5" rx=3D"0.25" stroke-width=3D"0.5"></rect><rec=
+t x=3D"29.75" y=3D"12.25" width=3D"0.5" height=3D"6.5" rx=3D"0.25" transfor=
+m=3D"rotate(90 29.75 12.25)" stroke-width=3D"0.5"></rect><path d=3D"M19.5 1=
+2.5h-7a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-5" stroke-linecap=
+=3D"round"></path><path d=3D"M11.5 14.5L19 20l4-3" stroke-linecap=3D"round"=
+></path></svg></button></div></div></div></div></div></div></div><div class=
+=3D"as oi s at"><div class=3D"wy db s"><span class=3D"gu qe"><span class=3D=
+"bf b gn bh dx">Wai Jean Follows</span></span><ul class=3D"wv"><li class=3D=
+"ww wx"><div class=3D"wz s"><a href=3D"https://ludobenistant.medium.com/?so=
+urce=3Dblogrolls_sidebar-----34c43ce8b93d----------------------------------=
+-" rel=3D"noopener follow"><img alt=3D"Ludovic Benistant" class=3D"s io xa =
+xb" src=3D"https://miro.medium.com/fit/c/20/20/1*7KYprQW-j7_xM8gA8gZakg.jpe=
+g" width=3D"20" height=3D"20"></a></div><section class=3D"gf"><span class=
+=3D"xe qe s"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" href=
+=3D"https://ludobenistant.medium.com/?source=3Dblogrolls_sidebar-----34c43c=
+e8b93d-----------------------------------" rel=3D"noopener follow"><div><di=
+v class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"2=
+47" aria-labelledby=3D"247"><h4 class=3D"bf b gn bh jm xc qz ra un rc rd dx=
+ xd">Ludovic Benistant</h4></div></div></a></span></section></li><li class=
+=3D"ww wx"><div class=3D"wz s"><a href=3D"https://matthew-brems.medium.com/=
+?source=3Dblogrolls_sidebar-----34c43ce8b93d-------------------------------=
+----" rel=3D"noopener follow"><img alt=3D"Matt Brems" class=3D"s io xa xb" =
+src=3D"https://miro.medium.com/fit/c/20/20/1*dZnpWXk6kH0WKDYn8bkjwQ.jpeg" w=
+idth=3D"20" height=3D"20"></a></div><section class=3D"gf"><span class=3D"xe=
+ qe s"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" href=3D"ht=
+tps://matthew-brems.medium.com/?source=3Dblogrolls_sidebar-----34c43ce8b93d=
+-----------------------------------" rel=3D"noopener follow"><div><div clas=
+s=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"248" ar=
+ia-labelledby=3D"248"><h4 class=3D"bf b gn bh jm xc qz ra un rc rd dx xd">M=
+att Brems</h4></div></div></a></span></section></li><li class=3D"ww wx"><di=
+v class=3D"wz s"><a href=3D"https://tuannguyen-doan.medium.com/?source=3Dbl=
+ogrolls_sidebar-----34c43ce8b93d-----------------------------------" rel=3D=
+"noopener follow"><img alt=3D"Tuan Nguyen Doan" class=3D"s io xa xb" src=3D=
+"https://miro.medium.com/fit/c/20/20/1*wKY135P_dCBjeC1hcMregA.jpeg" width=
+=3D"20" height=3D"20"></a></div><section class=3D"gf"><span class=3D"xe qe =
+s"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" href=3D"https:=
+//tuannguyen-doan.medium.com/?source=3Dblogrolls_sidebar-----34c43ce8b93d--=
+---------------------------------" rel=3D"noopener follow"><div><div class=
+=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"249" ari=
+a-labelledby=3D"249"><h4 class=3D"bf b gn bh jm xc qz ra un rc rd dx xd">Tu=
+an Nguyen Doan</h4></div></div></a></span></section></li></ul><p class=3D"b=
+f b gn bh dx"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" hre=
+f=3D"https://towardsdatascience.com/@waijean/following?source=3Dblogrolls_s=
+idebar-----34c43ce8b93d-----------------------------------" rel=3D"noopener=
+ follow">See all (6)</a></p></div></div><div class=3D"oh oi v n o bc oj"><d=
+iv class=3D"na n"><div class=3D"n o bc"><div class=3D"at ok ol om on oo op"=
+><div class=3D""><button class=3D"cj oq or os en ot ou op r ov ow"><svg wid=
+th=3D"29" height=3D"29" aria-label=3D"clap"><g fill-rule=3D"evenodd"><path =
+d=3D"M13.74 1l.76 2.97.76-2.97zM16.82 4.78l1.84-2.56-1.43-.47zM10.38 2.22l1=
+.84 2.56-.41-3.03zM22.38 22.62a5.11 5.11 0 0 1-3.16 1.61l.49-.45c2.88-2.89 =
+3.45-5.98 1.69-9.21l-1.1-1.94-.96-2.02c-.31-.67-.23-1.18.25-1.55a.84.84 0 0=
+ 1 .66-.16c.34.05.66.28.88.6l2.85 5.02c1.18 1.97 1.38 5.12-1.6 8.1M9.1 22.1=
+l-5.02-5.02a1 1 0 0 1 .7-1.7 1 1 0 0 1 .72.3l2.6 2.6a.44.44 0 0 0 .63-.62L6=
+.1 15.04l-1.75-1.75a1 1 0 1 1 1.41-1.41l4.15 4.15a.44.44 0 0 0 .63 0 .44.44=
+ 0 0 0 0-.62L6.4 11.26l-1.18-1.18a1 1 0 0 1 0-1.4 1.02 1.02 0 0 1 1.41 0l1.=
+18 1.16L11.96 14a.44.44 0 0 0 .62 0 .44.44 0 0 0 0-.63L8.43 9.22a.99.99 0 0=
+ 1-.3-.7.99.99 0 0 1 .3-.7 1 1 0 0 1 1.41 0l7 6.98a.44.44 0 0 0 .7-.5l-1.35=
+-2.85c-.31-.68-.23-1.19.25-1.56a.85.85 0 0 1 .66-.16c.34.06.66.28.88.6L20.6=
+3 15c1.57 2.88 1.07 5.54-1.55 8.16a5.62 5.62 0 0 1-5.06 1.65 9.35 9.35 0 0 =
+1-4.93-2.72zM13 6.98l2.56 2.56c-.5.6-.56 1.41-.15 2.28l.26.56-4.25-4.25a.98=
+.98 0 0 1-.12-.45 1 1 0 0 1 .29-.7 1.02 1.02 0 0 1 1.41 0zm8.89 2.06c-.38-.=
+56-.9-.92-1.49-1.01a1.74 1.74 0 0 0-1.34.33c-.38.29-.61.65-.71 1.06a2.1 2.1=
+ 0 0 0-1.1-.56 1.78 1.78 0 0 0-.99.13l-2.64-2.64a1.88 1.88 0 0 0-2.65 0 1.8=
+6 1.86 0 0 0-.48.85 1.89 1.89 0 0 0-2.67-.01 1.87 1.87 0 0 0-.5.9c-.76-.75-=
+2-.75-2.7-.04a1.88 1.88 0 0 0 0 2.66c-.3.12-.61.29-.87.55a1.88 1.88 0 0 0 0=
+ 2.66l.62.62a1.88 1.88 0 0 0-.9 3.16l5.01 5.02c1.6 1.6 3.52 2.64 5.4 2.96a7=
+.16 7.16 0 0 0 1.18.1c1.03 0 2-.25 2.9-.7A5.9 5.9 0 0 0 23 23.24c3.34-3.34 =
+3.08-6.93 1.74-9.17l-2.87-5.04z"></path></g></svg></button></div></div><div=
+ class=3D"s ox oy oz pa pb pc pd"><div class=3D"pe"><p class=3D"bf b bg bh =
+dx"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef">69 </but=
+ton></p></div></div></div></div><div class=3D"pf na s"><div class=3D"n"><bu=
+tton class=3D"en or cj"><div class=3D"n o bc"><div class=3D"n o"><div><div =
+class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"3" =
+aria-labelledby=3D"3"><svg width=3D"25" height=3D"25" aria-label=3D"respons=
+es" class=3D"pg ph en ow"><path d=3D"M19.07 21.12a6.33 6.33 0 0 1-3.53-1.1 =
+7.8 7.8 0 0 1-.7-.52c-.77.21-1.57.32-2.38.32-4.67 0-8.46-3.5-8.46-7.8C4 7.7=
+ 7.79 4.2 12.46 4.2c4.66 0 8.46 3.5 8.46 7.8 0 2.06-.85 3.99-2.4 5.45a6.28 =
+6.28 0 0 0 1.14 2.59c.15.21.17.48.06.7a.69.69 0 0 1-.62.38h-.03zm0-1v.5l.03=
+-.5h-.03zm-3.92-1.64l.21.2a6.09 6.09 0 0 0 3.24 1.54 7.14 7.14 0 0 1-.83-1.=
+84 5.15 5.15 0 0 1-.16-.75 2.4 2.4 0 0 1-.02-.29v-.23l.18-.15a6.6 6.6 0 0 0=
+ 2.3-4.96c0-3.82-3.4-6.93-7.6-6.93-4.19 0-7.6 3.11-7.6 6.93 0 3.83 3.41 6.9=
+4 7.6 6.94.83 0 1.64-.12 2.41-.35l.28-.08z" fill-rule=3D"evenodd"></path></=
+svg></div></div><p class=3D"bf b bg bh dx"><span class=3D"pi ph">2</span></=
+p></div></div></button></div></div><div class=3D"pj s"><div><div class=3D"c=
+a" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"75" aria-labe=
+lledby=3D"75"><div><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false"=
+ aria-describedby=3D"76" aria-labelledby=3D"76"><div class=3D"ca v" aria-hi=
+dden=3D"false"><button aria-controls=3D"addToCatalogBookmarkButton" aria-ex=
+panded=3D"false" aria-label=3D"Add to list bookmark button" class=3D"ea vn =
+ce cf cg ch ci cj ck bq"><svg width=3D"25" height=3D"25" viewBox=3D"0 0 25 =
+25" fill=3D"none" class=3D"wq"><path d=3D"M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5=
+ 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 =
+1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4=
+a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z=
+" fill=3D"#292929"></path></svg></button></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div><div class=3D"es ge nb et nc nd=
+ ne nf ng nh"></div><div><div class=3D"pk jg n ao p"><div class=3D"n p"><di=
+v class=3D"au av aw ax ay gj ba v"><div class=3D"n cy"></div><div class=3D"=
+n o cy"></div><div class=3D"xg xh wv xi qj xj xw"><div class=3D"xl s"><h2 c=
+lass=3D"bf kd ke hx kg kh ia kj ib id kl ie ig kn ih ij kp ht">Sign up for =
+The Variable</h2></div><div class=3D"xm s"><h3 class=3D"bf b gn bh ht">By T=
+owards Data Science</h3></div><div class=3D"mw xn s"><p class=3D"bf b xo ql=
+ xp qo tj qr tl qu tn qx ht">Every Thursday, the Variable delivers the very=
+ best of Towards Data Science: from hands-on tutorials and cutting-edge res=
+earch to original features you don't want to miss.&nbsp;<a class=3D"ea eb c=
+e cf cg ch ci cj ck bq cl ee ef ka" href=3D"https://medium.com/towards-data=
+-science/newsletters/the-variable?source=3Dnewsletter_v3_promo-------------=
+-------------newsletter_v3_promo--------------" rel=3D"noopener follow">Tak=
+e a look.</a></p></div><div class=3D"n cy"><div class=3D"xq s xr"><button c=
+lass=3D"bf b dn do nq xs nr ns ff nt fi bq br bs nu fl bw bx by bz ca cb"><=
+div class=3D"xt n o p"><span class=3D"wu" aria-hidden=3D"true"><svg width=
+=3D"38" height=3D"38" viewBox=3D"0 0 38 38" fill=3D"none"><rect x=3D"26.25"=
+ y=3D"9.25" width=3D"0.5" height=3D"6.5" rx=3D"0.25" stroke-width=3D"0.5"><=
+/rect><rect x=3D"29.75" y=3D"12.25" width=3D"0.5" height=3D"6.5" rx=3D"0.25=
+" transform=3D"rotate(90 29.75 12.25)" stroke-width=3D"0.5"></rect><path d=
+=3D"M19.5 12.5h-7a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-5" strok=
+e-linecap=3D"round"></path><path d=3D"M11.5 14.5L19 20l4-3" stroke-linecap=
+=3D"round"></path></svg></span>Get this newsletter</div></button></div><div=
+ class=3D"xu xv s"><p class=3D"bf b gn bh ht">Emails will be sent to k0326j=
+im@gmail.com.<span><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef=
+" href=3D"https://medium.com/m/signin?operation=3Dlogin&amp;redirect=3Dhttp=
+s%3A%2F%2Ftowardsdatascience.com%2Fmistakes-in-applying-univariate-feature-=
+selection-methods-34c43ce8b93d&amp;collection=3DTowards+Data+Science&amp;co=
+llectionId=3D7f60cf5620c9&amp;newsletterV3=3DThe+Variable&amp;newsletterV3I=
+d=3Dd6fe9076899&amp;source=3Dnewsletter_v3_promo--------------------------n=
+ewsletter_v3_promo----------d6fe9076899----" rel=3D"noopener follow"><butto=
+n class=3D"ea eb ce cf cg ch ci cj ck bq cl ee ef ka s" target=3D"_blank">N=
+ot you?</button></a></span></p></div></div></div><div class=3D"pm s"><ul cl=
+ass=3D"cj ck"><li class=3D"ca qc qd qe"><a href=3D"https://towardsdatascien=
+ce.com/tagged/statistics" class=3D"bf b gn qf dx qg qh cb s oa">Statistics<=
+/a></li><li class=3D"ca qc qd qe"><a href=3D"https://towardsdatascience.com=
+/tagged/machine-learning" class=3D"bf b gn qf dx qg qh cb s oa">Machine Lea=
+rning</a></li><li class=3D"ca qc qd qe"><a href=3D"https://towardsdatascien=
+ce.com/tagged/feature-selection" class=3D"bf b gn qf dx qg qh cb s oa">Feat=
+ure Selection</a></li><li class=3D"ca qc qd qe"><a href=3D"https://towardsd=
+atascience.com/tagged/editors-pick" class=3D"bf b gn qf dx qg qh cb s oa">E=
+ditors Pick</a></li><li class=3D"ca qc qd qe"><a href=3D"https://towardsdat=
+ascience.com/tagged/getting-started" class=3D"bf b gn qf dx qg qh cb s oa">=
+Getting Started</a></li></ul></div><div class=3D"pm s"><div class=3D"n cp j=
+c"><div class=3D"n o bc"><div class=3D"pn s"><span class=3D"s po pp pq e d"=
+><div class=3D"n o bc"><div class=3D"at ok ol om on oo op"><div class=3D"">=
+<button class=3D"cj oq or os en ot ou op r ov ow"><svg width=3D"25" height=
+=3D"25" viewBox=3D"0 0 25 25" aria-label=3D"clap"><g fill-rule=3D"evenodd">=
+<path d=3D"M11.74 0l.76 2.97.76-2.97zM14.81 3.78l1.84-2.56-1.42-.47zM8.38 1=
+.22l1.84 2.56L9.8.75zM20.38 21.62a5.11 5.11 0 0 1-3.16 1.61l.49-.45c2.88-2.=
+89 3.45-5.98 1.69-9.21l-1.1-1.94-.96-2.02c-.31-.67-.23-1.18.25-1.55a.84.84 =
+0 0 1 .66-.16c.34.05.66.28.88.6l2.85 5.02c1.18 1.97 1.38 5.12-1.6 8.1M7.1 2=
+1.1l-5.02-5.02a1 1 0 0 1 .7-1.7 1 1 0 0 1 .72.3l2.6 2.6a.44.44 0 0 0 .63-.6=
+2L4.1 14.04l-1.75-1.75a1 1 0 1 1 1.41-1.41l4.15 4.15a.44.44 0 0 0 .63 0 .44=
+.44 0 0 0 0-.62L4.4 10.26 3.22 9.08a1 1 0 0 1 0-1.4 1.02 1.02 0 0 1 1.41 0l=
+1.18 1.16L9.96 13a.44.44 0 0 0 .62 0 .44.44 0 0 0 0-.63L6.43 8.22a.99.99 0 =
+0 1-.3-.7.99.99 0 0 1 .3-.7 1 1 0 0 1 1.41 0l7 6.98a.44.44 0 0 0 .7-.5l-1.3=
+5-2.85c-.31-.68-.23-1.19.25-1.56a.85.85 0 0 1 .66-.16c.34.06.66.28.88.6L18.=
+63 14c1.57 2.88 1.07 5.54-1.55 8.16a5.62 5.62 0 0 1-5.06 1.65 9.35 9.35 0 0=
+ 1-4.93-2.72zM11 5.98l2.56 2.56c-.5.6-.56 1.41-.15 2.28l.26.56-4.25-4.25a.9=
+8.98 0 0 1-.12-.45 1 1 0 0 1 .29-.7 1.02 1.02 0 0 1 1.41 0zm8.89 2.06c-.38-=
+.56-.9-.92-1.49-1.01a1.74 1.74 0 0 0-1.34.33c-.38.29-.61.65-.71 1.06a2.1 2.=
+1 0 0 0-1.1-.56 1.78 1.78 0 0 0-.99.13l-2.64-2.64a1.88 1.88 0 0 0-2.65 0 1.=
+86 1.86 0 0 0-.48.85 1.89 1.89 0 0 0-2.67-.01 1.87 1.87 0 0 0-.5.9c-.76-.75=
+-2-.75-2.7-.04a1.88 1.88 0 0 0 0 2.66c-.3.12-.61.29-.87.55a1.88 1.88 0 0 0 =
+0 2.66l.62.62a1.88 1.88 0 0 0-.9 3.16l5.01 5.02c1.6 1.6 3.52 2.64 5.4 2.96a=
+7.16 7.16 0 0 0 1.18.1c1.03 0 2-.25 2.9-.7A5.9 5.9 0 0 0 21 22.24c3.34-3.34=
+ 3.08-6.93 1.74-9.17l-2.87-5.04z"></path></g></svg></button></div></div><di=
+v class=3D"s ox oy oz pa pr ps pt"><div class=3D"at pu pe"><p class=3D"bf b=
+ bg bh ht"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef">6=
+9<span class=3D"s h g f pv pw">&nbsp;claps</span></button><span class=3D"s =
+h g f pv pw"></span></p></div></div></div></span><span class=3D"s h g f pv =
+pw"><div class=3D"n o bc"><div class=3D"at ok ol om on oo op"><div class=3D=
+""><button class=3D"cj oq or os en ot ou op r ov ow"><svg width=3D"25" heig=
+ht=3D"25" viewBox=3D"0 0 25 25" aria-label=3D"clap"><g fill-rule=3D"evenodd=
+"><path d=3D"M11.74 0l.76 2.97.76-2.97zM14.81 3.78l1.84-2.56-1.42-.47zM8.38=
+ 1.22l1.84 2.56L9.8.75zM20.38 21.62a5.11 5.11 0 0 1-3.16 1.61l.49-.45c2.88-=
+2.89 3.45-5.98 1.69-9.21l-1.1-1.94-.96-2.02c-.31-.67-.23-1.18.25-1.55a.84.8=
+4 0 0 1 .66-.16c.34.05.66.28.88.6l2.85 5.02c1.18 1.97 1.38 5.12-1.6 8.1M7.1=
+ 21.1l-5.02-5.02a1 1 0 0 1 .7-1.7 1 1 0 0 1 .72.3l2.6 2.6a.44.44 0 0 0 .63-=
+.62L4.1 14.04l-1.75-1.75a1 1 0 1 1 1.41-1.41l4.15 4.15a.44.44 0 0 0 .63 0 .=
+44.44 0 0 0 0-.62L4.4 10.26 3.22 9.08a1 1 0 0 1 0-1.4 1.02 1.02 0 0 1 1.41 =
+0l1.18 1.16L9.96 13a.44.44 0 0 0 .62 0 .44.44 0 0 0 0-.63L6.43 8.22a.99.99 =
+0 0 1-.3-.7.99.99 0 0 1 .3-.7 1 1 0 0 1 1.41 0l7 6.98a.44.44 0 0 0 .7-.5l-1=
+.35-2.85c-.31-.68-.23-1.19.25-1.56a.85.85 0 0 1 .66-.16c.34.06.66.28.88.6L1=
+8.63 14c1.57 2.88 1.07 5.54-1.55 8.16a5.62 5.62 0 0 1-5.06 1.65 9.35 9.35 0=
+ 0 1-4.93-2.72zM11 5.98l2.56 2.56c-.5.6-.56 1.41-.15 2.28l.26.56-4.25-4.25a=
+.98.98 0 0 1-.12-.45 1 1 0 0 1 .29-.7 1.02 1.02 0 0 1 1.41 0zm8.89 2.06c-.3=
+8-.56-.9-.92-1.49-1.01a1.74 1.74 0 0 0-1.34.33c-.38.29-.61.65-.71 1.06a2.1 =
+2.1 0 0 0-1.1-.56 1.78 1.78 0 0 0-.99.13l-2.64-2.64a1.88 1.88 0 0 0-2.65 0 =
+1.86 1.86 0 0 0-.48.85 1.89 1.89 0 0 0-2.67-.01 1.87 1.87 0 0 0-.5.9c-.76-.=
+75-2-.75-2.7-.04a1.88 1.88 0 0 0 0 2.66c-.3.12-.61.29-.87.55a1.88 1.88 0 0 =
+0 0 2.66l.62.62a1.88 1.88 0 0 0-.9 3.16l5.01 5.02c1.6 1.6 3.52 2.64 5.4 2.9=
+6a7.16 7.16 0 0 0 1.18.1c1.03 0 2-.25 2.9-.7A5.9 5.9 0 0 0 21 22.24c3.34-3.=
+34 3.08-6.93 1.74-9.17l-2.87-5.04z"></path></g></svg></button></div></div><=
+div class=3D"s ox oy oz pa pr ps pt"><div class=3D"pe"><p class=3D"bf b bg =
+bh dx"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef">69 </=
+button></p></div></div></div></span></div><div class=3D"px n"><div class=3D=
+"n"><button class=3D"en or cj"><div class=3D"n o bc"><div class=3D"n o"><di=
+v><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=
+=3D"230" aria-labelledby=3D"230"><svg width=3D"29" height=3D"29" aria-label=
+=3D"responses" class=3D"pg ph en ow py"><path d=3D"M21.27 20.06a9.04 9.04 0=
+ 0 0 2.75-6.68C24.02 8.21 19.67 4 14.1 4S4 8.21 4 13.38c0 5.18 4.53 9.39 10=
+.1 9.39 1 0 2-.14 2.95-.41.28.25.6.49.92.7a7.46 7.46 0 0 0 4.19 1.3c.27 0 .=
+5-.13.6-.35a.63.63 0 0 0-.05-.65 8.08 8.08 0 0 1-1.29-2.58 5.42 5.42 0 0 1-=
+.15-.75zm-3.85 1.32l-.08-.28-.4.12a9.72 9.72 0 0 1-2.84.43c-4.96 0-9-3.71-9=
+-8.27 0-4.55 4.04-8.26 9-8.26 4.95 0 8.77 3.71 8.77 8.27 0 2.25-.75 4.35-2.=
+5 5.92l-.24.21v.32a5.59 5.59 0 0 0 .21 1.29c.19.7.49 1.4.89 2.08a6.43 6.43 =
+0 0 1-2.67-1.06c-.34-.22-.88-.48-1.16-.74z"></path></svg></div></div><p cla=
+ss=3D"bf b bg bh ht"><span class=3D"pz qa ph">2</span></p></div></div></but=
+ton></div></div></div><div class=3D"n o"><div class=3D"wr s z"><div><div cl=
+ass=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"231" =
+aria-labelledby=3D"231"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec e=
+d cl ee ef" aria-label=3D"Share on twitter"><svg width=3D"30" height=3D"30"=
+ viewBox=3D"0 0 30 30" fill=3D"none" class=3D"vn ws"><path fill-rule=3D"eve=
+nodd" clip-rule=3D"evenodd" d=3D"M15 27a12 12 0 1 0 0-24 12 12 0 0 0 0 24zm=
+4.95-16.17a2.67 2.67 0 0 0-4.6 1.84c0 .2.03.41.05.62a7.6 7.6 0 0 1-5.49-2.8=
+2 3 3 0 0 0-.38 1.34c.02.94.49 1.76 1.2 2.23a2.53 2.53 0 0 1-1.2-.33v.04c0 =
+1.28.92 2.36 2.14 2.62-.23.05-.46.08-.71.1l-.21-.02-.27-.03a2.68 2.68 0 0 0=
+ 2.48 1.86A5.64 5.64 0 0 1 9 19.38a7.62 7.62 0 0 0 4.1 1.19c4.9 0 7.58-4.07=
+ 7.57-7.58v-.39c.52-.36.97-.83 1.33-1.38-.48.23-1 .37-1.53.43.56-.33.96-.86=
+ 1.15-1.48-.5.31-1.07.53-1.67.66z" fill=3D"#292929"></path></svg></button><=
+/div></div></div><div class=3D"wr s z"><div><div class=3D"ca" role=3D"toolt=
+ip" aria-hidden=3D"false" aria-describedby=3D"232" aria-labelledby=3D"232">=
+<button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef" aria-label=
+=3D"Share on facebook"><svg width=3D"30" height=3D"30" viewBox=3D"0 0 30 30=
+" fill=3D"none" class=3D"vn ws"><path fill-rule=3D"evenodd" clip-rule=3D"ev=
+enodd" d=3D"M15 27a12 12 0 1 0 0-24 12 12 0 0 0 0 24zm-1.23-6.03V15.6H12v-2=
+.15h1.77v-1.6C13.77 10 14.85 9 16.42 9c.75 0 1.4.06 1.58.08v1.93h-1.09c-.85=
+ 0-1.02.43-1.02 1.05v1.38h2.04l-.27 2.15H15.9V21l-2.13-.03z" fill=3D"#29292=
+9"></path></svg></button></div></div></div><div class=3D"wr s z"><div><div =
+class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=3D"233=
+" aria-labelledby=3D"233"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec=
+ ed cl ee ef" aria-label=3D"Share on linkedin"><svg width=3D"30" height=3D"=
+30" viewBox=3D"0 0 30 30" fill=3D"none" class=3D"vn ws"><path fill-rule=3D"=
+evenodd" clip-rule=3D"evenodd" d=3D"M27 15a12 12 0 1 1-24 0 12 12 0 0 1 24 =
+0zm-14.61 5v-7.42h-2.26V20h2.26zm-1.13-8.44c.79 0 1.28-.57 1.28-1.28-.02-.7=
+3-.5-1.28-1.26-1.28-.78 0-1.28.55-1.28 1.28 0 .71.49 1.28 1.25 1.28h.01zM15=
+.88 20h-2.5s.04-6.5 0-7.17h2.5v1.02l-.02.02h.02v-.02a2.5 2.5 0 0 1 2.25-1.1=
+8c1.64 0 2.87 1.02 2.87 3.22V20h-2.5v-3.83c0-.97-.36-1.62-1.26-1.62-.69 0-1=
+.1.44-1.28.87-.06.15-.08.36-.08.58v4z" fill=3D"#292929"></path></svg></butt=
+on></div></div></div><div class=3D"s z"><div><div class=3D"ca" role=3D"tool=
+tip" aria-hidden=3D"false" aria-describedby=3D"234" aria-labelledby=3D"234"=
+><button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee ef"><svg width=
+=3D"30" height=3D"30" viewBox=3D"0 0 30 30" fill=3D"none" class=3D"vn ws"><=
+path fill-rule=3D"evenodd" clip-rule=3D"evenodd" d=3D"M15 27a12 12 0 1 0 0-=
+24 12 12 0 0 0 0 24zM9.29 16.28c-.2.36-.29.75-.29 1.17a2.57 2.57 0 0 0 .78 =
+1.84l1.01.96c.53.5 1.17.75 1.92.75s1.38-.25 1.9-.75l1.2-1.15.75-.71.51-.5a2=
+.51 2.51 0 0 0 .72-2.34.7.7 0 0 0-.03-.18 2.74 2.74 0 0 0-.23-.5v-.02l-.08-=
+.14-.02-.03-.02-.01a.33.33 0 0 0-.07-.1c0-.02-.01-.03-.03-.05a.2.2 0 0 0-.0=
+3-.03l-.03-.04v-.01l-.02-.03-.04-.03a.85.85 0 0 1-.13-.13l-.43-.42-.06.06-.=
+9.84-.05.09a.26.26 0 0 0-.03.1l.37.38c.04.03.08.07.1.11l.01.01.01.03.02.01.=
+04.1.03.04.06.1v.02l.01.02c.03.1.05.2.05.33a1 1 0 0 1-.12.49c-.07.13-.15.22=
+-.22.29l-.88.85-.61.57-.95.92c-.22.2-.5.3-.82.3-.31 0-.58-.1-.8-.3l-.98-.96=
+a1.15 1.15 0 0 1-.3-.42 1.4 1.4 0 0 1-.04-.35c0-.1.01-.2.04-.3a1 1 0 0 1 .3=
+-.49l1.5-1.46v-.24c0-.21 0-.42.04-.6a3.5 3.5 0 0 1 .92-1.72c-.41.1-.78.32-1=
+.11.62l-.01.02-.01.01-2.46 2.33c-.2.21-.35.4-.44.6h-.02c0 .02 0 .02-.02.02v=
+.02l-.01.01zm3.92-1.8a1.83 1.83 0 0 0 .02.97c0 .06 0 .13.02.19.06.17.14.34.=
+22.5v.02l.06.12.02.03.01.02.08.1c0 .02.02.03.04.05l.08.1h.01c0 .01 0 .03.02=
+.03l.14.14.43.41.08-.06.88-.84.05-.09.03-.1-.36-.37a.4.4 0 0 1-.12-.13v-.02=
+l-.02-.02-.05-.09-.04-.04-.04-.1v-.02l-.02-.02a1.16 1.16 0 0 1 .06-.82c.09-=
+.14.16-.24.23-.3l.9-.85.6-.58.93-.92c.23-.2.5-.3.82-.3a1.2 1.2 0 0 1 .82.3l=
+1 .96c.13.15.23.29.28.42a1.43 1.43 0 0 1 0 .66c-.03.17-.12.33-.26.48l-1.54 =
+1.45.02.25a3.28 3.28 0 0 1-.96 2.32 2.5 2.5 0 0 0 1.1-.62l.01-.01 2.46-2.34=
+c.19-.2.35-.4.46-.6l.02-.02v-.02h.01a2.45 2.45 0 0 0 .21-1.82 2.53 2.53 0 0=
+ 0-.7-1.19l-1-.96a2.68 2.68 0 0 0-1.91-.75c-.75 0-1.38.25-1.9.76l-1.2 1.14-=
+.76.72-.5.49c-.4.37-.64.83-.74 1.37z" fill=3D"#292929"></path></svg></butto=
+n></div></div></div><div class=3D"jd s z"><div><div class=3D"ca" role=3D"to=
+oltip" aria-hidden=3D"false" aria-describedby=3D"235" aria-labelledby=3D"23=
+5"><div><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-descr=
+ibedby=3D"236" aria-labelledby=3D"236"><div class=3D"ca v" aria-hidden=3D"f=
+alse"><button aria-controls=3D"addToCatalogBookmarkButton" aria-expanded=3D=
+"false" aria-label=3D"Add to list bookmark button" class=3D"ea vn ce cf cg =
+ch ci cj ck bq"><svg width=3D"25" height=3D"25" viewBox=3D"0 0 25 25" fill=
+=3D"none" class=3D"wq"><path d=3D"M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0=
+ 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.=
+5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 =
+0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z" fill=
+=3D"#292929"></path></svg></button></div></div></div></div></div></div><div=
+><div class=3D"ca" role=3D"tooltip" aria-hidden=3D"false" aria-describedby=
+=3D"237" aria-labelledby=3D"237"><div class=3D"s"><div class=3D"ca" aria-hi=
+dden=3D"false"><button class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl ee e=
+f" aria-label=3D"More options"><svg class=3D"overflow-dots-filled-25px_svg_=
+_svgIcon-use" width=3D"25" height=3D"25"><path d=3D"M5 12.5c0 .55.2 1.02.59=
+ 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.=
+2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.=
+59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.5=
+9.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55=
+ 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87=
+.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1=
+.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"=
+ fill-rule=3D"evenodd"></path></svg></button></div></div></div></div></div>=
+</div></div></div></div><div><div class=3D"n p"><div class=3D"au av aw ax a=
+y gj ba v"></div></div><div class=3D"s jc"><div class=3D"qi oh s qj"><div c=
+lass=3D"n p"><div class=3D"au av aw ax ay gj ba v"><div class=3D"n o cp"><h=
+2 class=3D"bf kd qk ql ui kg qn qo uj kj qq qr uk kl qt qu ul kn qw qx um k=
+p jm qz ra un rc rd ht"><a class=3D"ea eb ce cf cg ch ci cj ck bq ec ed cl =
+ee ef" href=3D"https://towardsdatascience.com/?source=3Dfollow_footer-----3=
+4c43ce8b93d-----------------------------------" rel=3D"noopener follow">Mor=
+e from Towards Data Science</a></h2><div class=3D"ca" aria-hidden=3D"false"=
+ aria-describedby=3D"collectionFollowPopover" aria-labelledby=3D"collection=
+FollowPopover"><button class=3D"bf b bg bh nq bj nr ns ff nt fi bq br bs nu=
+ fl bw bx by bz ca cb" aria-controls=3D"collectionFollowPopover" aria-expan=
+ded=3D"false"><div class=3D"n bc">Follow</div></button></div></div><div cla=
+ss=3D"re uo s"><p class=3D"bf b bg bh dx">Your home for data science. A Med=
+ium publication sharing concepts, ideas and codes.</p></div></div></div></d=
+iv></div><div class=3D"rf s qj jc"><div class=3D"n p"><div class=3D"rg rh r=
+i rj rk rl ba v"><div class=3D"rm pk s"><div class=3D"rl s jx"><a class=3D"=
+bf b bg bh nq bj nr ns ff nt fi bq br bs nu fl bw bx by bz ca cb" href=3D"h=
+ttps://towardsdatascience.com/?source=3Dfollow_footer-----34c43ce8b93d-----=
+------------------------------" rel=3D"noopener follow">Read more from <!--=
+ -->Towards Data Science</a></div></div></div></div></div><div class=3D"s f=
+v jc"><div class=3D"n p"><div class=3D"au av aw ax ay az ba v"></div></div>=
+</div></div></div></div><div class=3D"xx s xy xz"><div class=3D"n p"><div c=
+lass=3D"au av aw ax ay az ba v"><div class=3D"n ao"><div class=3D"n ya yb y=
+c yd ye yf yg yh yi yj cp"><a class=3D"ea eb ce cf cg ch ci cj ck bq yk yl =
+cl ym yn" aria-label=3D"Go to homepage" href=3D"https://medium.com/?source=
+=3Dpost_page-----34c43ce8b93d-----------------------------------" rel=3D"no=
+opener follow"><svg viewBox=3D"0 0 3940 610" class=3D"nr yo"><path d=3D"M59=
+4.79 308.2c0 163.76-131.85 296.52-294.5 296.52S5.8 472 5.8 308.2 137.65 11.=
+69 300.29 11.69s294.5 132.75 294.5 296.51M917.86 308.2c0 154.16-65.93 279.1=
+2-147.25 279.12s-147.25-125-147.25-279.12S689.29 29.08 770.61 29.08s147.25 =
+125 147.25 279.12M1050 308.2c0 138.12-23.19 250.08-51.79 250.08s-51.79-112-=
+51.79-250.08 23.19-250.08 51.8-250.08S1050 170.09 1050 308.2M1862.77 37.4l.=
+82-.18v-6.35h-167.48l-155.51 365.5-155.51-365.5h-180.48v6.35l.81.18c30.57 6=
+.9 46.09 17.19 46.09 54.3v434.45c0 37.11-15.58 47.4-46.15 54.3l-.81.18V587H=
+1327v-6.35l-.81-.18c-30.57-6.9-46.09-17.19-46.09-54.3V116.9L1479.87 587h11.=
+33l205.59-483.21V536.9c-2.62 29.31-18 38.36-45.68 44.61l-.82.19v6.3h213.3v-=
+6.3l-.82-.19c-27.71-6.25-43.46-15.3-46.08-44.61l-.14-445.2h.14c0-37.11 15.5=
+2-47.4 46.08-54.3m97.43 287.8c3.49-78.06 31.52-134.4 78.56-135.37 14.51.24 =
+26.68 5 36.14 14.16 20.1 19.51 29.55 60.28 28.09 121.21zm-2.11 22h250v-1.05=
+c-.71-59.69-18-106.12-51.34-138-28.82-27.55-71.49-42.71-116.31-42.71h-1c-23=
+.26 0-51.79 5.64-72.09 15.86-23.11 10.7-43.49 26.7-60.45 47.7-27.3 33.83-43=
+.84 79.55-47.86 130.93-.13 1.54-.24 3.08-.35 4.62s-.18 2.92-.25 4.39a332.64=
+ 332.64 0 0 0-.36 21.69C1860.79 507 1923.65 600 2035.3 600c98 0 155.07-71.6=
+4 169.3-167.8l-7.19-2.53c-25 51.68-69.9 83-121 79.18-69.76-5.22-123.2-75.95=
+-118.35-161.63m532.69 157.68c-8.2 19.45-25.31 30.15-48.24 30.15s-43.89-15.7=
+4-58.78-44.34c-16-30.7-24.42-74.1-24.42-125.51 0-107 33.28-176.21 84.79-176=
+.21 21.57 0 38.55 10.7 46.65 29.37zm165.84 76.28c-30.57-7.23-46.09-18-46.09=
+-57V5.28L2424.77 60v6.7l1.14-.09c25.62-2.07 43 1.47 53.09 10.79 7.9 7.3 11.=
+75 18.5 11.75 34.26v71.14c-18.31-11.69-40.09-17.38-66.52-17.38-53.6 0-102.5=
+9 22.57-137.92 63.56-36.83 42.72-56.3 101.1-56.3 168.81C2230 518.72 2289.53=
+ 600 2378.13 600c51.83 0 93.53-28.4 112.62-76.3V588h166.65v-6.66zm159.29-50=
+5.33c0-37.76-28.47-66.24-66.24-66.24-37.59 0-67 29.1-67 66.24s29.44 66.24 6=
+7 66.24c37.77 0 66.24-28.48 66.24-66.24m43.84 505.33c-30.57-7.23-46.09-18-4=
+6.09-57h-.13V166.65l-166.66 47.85v6.5l1 .09c36.06 3.21 45.93 15.63 45.93 57=
+.77V588h166.8v-6.66zm427.05 0c-30.57-7.23-46.09-18-46.09-57V166.65L3082 212=
+.92v6.52l.94.1c29.48 3.1 38 16.23 38 58.56v226c-9.83 19.45-28.27 31-50.61 3=
+1.78-36.23 0-56.18-24.47-56.18-68.9V166.66l-166.66 47.85V221l1 .09c36.06 3.=
+2 45.94 15.62 45.94 57.77v191.27a214.48 214.48 0 0 0 3.47 39.82l3 13.05c14.=
+11 50.56 51.08 77 109 77 49.06 0 92.06-30.37 111-77.89v66h166.66v-6.66zM393=
+4.2 588v-6.67l-.81-.19c-33.17-7.65-46.09-22.07-46.09-51.43v-243.2c0-75.83-4=
+2.59-121.09-113.93-121.09-52 0-95.85 30.05-112.73 76.86-13.41-49.6-52-76.86=
+-109.06-76.86-50.12 0-89.4 26.45-106.25 71.13v-69.87l-166.66 45.89v6.54l1 .=
+09c35.63 3.16 45.93 15.94 45.93 57V588h155.5v-6.66l-.82-.2c-26.46-6.22-35-1=
+7.56-35-46.66V255.72c7-16.35 21.11-35.72 49-35.72 34.64 0 52.2 24 52.2 71.2=
+8V588h155.54v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66v-248a160.45 160.45=
+ 0 0 0-2.2-27.68c7.42-17.77 22.34-38.8 51.37-38.8 35.13 0 52.2 23.31 52.2 7=
+1.28V588z"></path></svg></a><div class=3D"yp yq yr ys yt yu n cp"><p class=
+=3D"bf b dn do yv"><a class=3D"ea eb ce cf cg ch ci cj ck bq tq cl ym yn" h=
+ref=3D"https://medium.com/about?autoplay=3D1&amp;source=3Dpost_page-----34c=
+43ce8b93d-----------------------------------" rel=3D"noopener follow">About=
+</a></p><p class=3D"bf b dn do yv"><a class=3D"ea eb ce cf cg ch ci cj ck b=
+q tq cl ym yn" href=3D"https://medium.com/new-story?source=3Dpost_page-----=
+34c43ce8b93d-----------------------------------" rel=3D"noopener follow">Wr=
+ite</a></p><p class=3D"bf b dn do yv"><a class=3D"ea eb ce cf cg ch ci cj c=
+k bq tq cl ym yn" href=3D"https://help.medium.com/hc/en-us?source=3Dpost_pa=
+ge-----34c43ce8b93d-----------------------------------" rel=3D"noopener fol=
+low">Help</a></p><p class=3D"bf b dn do yv"><a class=3D"ea eb ce cf cg ch c=
+i cj ck bq tq cl ym yn" href=3D"https://policy.medium.com/medium-terms-of-s=
+ervice-9db0094a1e0f?source=3Dpost_page-----34c43ce8b93d--------------------=
+---------------" rel=3D"noopener follow">Legal</a></p></div></div><div clas=
+s=3D"aq yw yx yy cr"><p class=3D"bf b dn do yz">Get the Medium app</p></div=
+><div class=3D"aq za ve cr zb"><div class=3D"be s"><a class=3D"ea eb ce cf =
+cg ch ci cj ck bq yk yl cl ym yn" href=3D"https://itunes.apple.com/app/medi=
+um-everyones-stories/id828256236?pt=3D698524&amp;mt=3D8&amp;ct=3Dpost_page&=
+amp;source=3Dpost_page-----34c43ce8b93d-----------------------------------"=
+ rel=3D"noopener follow"><img alt=3D"A button that says 'Download on the Ap=
+p Store', and if clicked it will lead you to the iOS App store" class=3D"" =
+src=3D"https://miro.medium.com/max/135/1*Crl55Tm6yDNMoucPo1tvDg.png" width=
+=3D"135" height=3D"41"></a></div><div class=3D"s"><a class=3D"ea eb ce cf c=
+g ch ci cj ck bq yk yl cl ym yn" href=3D"https://play.google.com/store/apps=
+/details?id=3Dcom.medium.reader&amp;source=3Dpost_page-----34c43ce8b93d----=
+-------------------------------" rel=3D"noopener follow"><img alt=3D"A butt=
+on that says 'Get it on, Google Play', and if clicked it will lead you to t=
+he Google Play store" class=3D"" src=3D"https://miro.medium.com/max/135/1*W=
+_RAPQ62h0em559zluJLdQ.png" width=3D"135" height=3D"41"></a></div></div></di=
+v></div></div></div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b5987e31-51cb-4622-8208-cc68eb1dc129@mhtml.blink
+
+@charset "utf-8";
+
+html { box-sizing: border-box; }
+
+*, ::before, ::after { box-sizing: inherit; }
+
+body { margin: 0px; padding: 0px; text-rendering: optimizelegibility; -webk=
+it-font-smoothing: antialiased; color: rgba(0, 0, 0, 0.8); position: relati=
+ve; min-height: 100vh; }
+
+h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, f=
+orm { margin: 0px; }
+
+menu, ol, ul { padding: 0px; list-style: none none; }
+
+main { display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+a, button, input { -webkit-tap-highlight-color: transparent; }
+
+img, svg { vertical-align: middle; }
+
+button { background: transparent; overflow: visible; }
+
+button, input, optgroup, select, textarea { margin: 0px; }
+
+:root { --reach-tabs:1; --reach-menu-button:1; }
+
+#speechify-root { font-family: Sohne, sans-serif; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-bfaf9f34-8002-40b8-be56-bfee167cfe59@mhtml.blink
+
+@charset "utf-8";
+
+@-webkit-keyframes k1 {=20
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes k1 {=20
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@-webkit-keyframes k2 {=20
+  0% { opacity: 0; transform: translateY(-60px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes k2 {=20
+  0% { opacity: 0; transform: translateY(-60px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@-webkit-keyframes k3 {=20
+  0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-60px); }
+}
+
+@keyframes k3 {=20
+  0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-60px); }
+}
+
+@-webkit-keyframes k4 {=20
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes k4 {=20
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-2edb9b88-a8e1-42d8-ae4f-3b2cb4e2f9f3@mhtml.blink
+
+@charset "utf-8";
+
+.a { font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSy=
+stemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helv=
+etica Neue", sans-serif; }
+
+.b { font-weight: 400; }
+
+.c { background-color: rgb(255, 255, 255); }
+
+.l { height: 100vh; }
+
+.m { width: 100vw; }
+
+.n { display: flex; }
+
+.o { align-items: center; }
+
+.p { justify-content: center; }
+
+.q { height: 25px; }
+
+.r { fill: rgb(41, 41, 41); }
+
+.s { display: block; }
+
+.t { margin-bottom: 36px; }
+
+.v { width: 100%; }
+
+.z { flex: 0 0 auto; }
+
+.ab { justify-self: flex-end; }
+
+.ac { z-index: 500; }
+
+.ae { visibility: hidden; }
+
+.af { overflow-x: scroll; }
+
+.ag { white-space: nowrap; }
+
+.ah { }
+
+.ai { }
+
+.aj::-webkit-scrollbar { display: none; }
+
+.ak { box-shadow: rgb(230, 230, 230) 0px -1px 0px inset; }
+
+.al { min-height: 184px; }
+
+.ao { flex-direction: column; }
+
+.ap { background-color: rgb(53, 88, 118); }
+
+.aq { display: none; }
+
+.as { border-bottom: none; }
+
+.at { position: relative; }
+
+.az { max-width: 1192px; }
+
+.ba { min-width: 0px; }
+
+.bb { height: 62px; }
+
+.bc { flex-direction: row; }
+
+.bd { flex: 1 0 auto; }
+
+.be { margin-right: 16px; }
+
+.bf { font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.bg { font-size: 14px; }
+
+.bh { line-height: 20px; }
+
+.bi { color: rgb(233, 241, 250); }
+
+.bj { padding: 7px 16px 9px; }
+
+.bk { background: 0px center; }
+
+.bl { fill: rgb(233, 241, 250); }
+
+.bm { border-color: rgb(215, 226, 238); }
+
+.br:disabled { cursor: inherit !important; }
+
+.bs:disabled { opacity: 0.3; }
+
+.bt:disabled:hover { color: rgb(233, 241, 250); }
+
+.bu:disabled:hover { fill: rgb(233, 241, 250); }
+
+.bv:disabled:hover { border-color: rgb(215, 226, 238); }
+
+.bw { border-radius: 99em; }
+
+.bx { border-width: 1px; }
+
+.by { border-style: solid; }
+
+.bz { box-sizing: border-box; }
+
+.ca { display: inline-block; }
+
+.cb { text-decoration: none; }
+
+.cc { margin-left: 0px; }
+
+.cd { color: rgb(197, 210, 225); }
+
+.ce { font-size: inherit; }
+
+.cf { border: inherit; }
+
+.cg { font-family: inherit; }
+
+.ch { letter-spacing: inherit; }
+
+.ci { font-weight: inherit; }
+
+.cj { padding: 0px; }
+
+.ck { margin: 0px; }
+
+.cl:disabled { cursor: default; }
+
+.cm:disabled { color: rgba(163, 208, 162, 0.5); }
+
+.cn:disabled { fill: rgba(163, 208, 162, 0.5); }
+
+.co { min-height: 115px; }
+
+.cp { justify-content: space-between; }
+
+.cv { align-items: flex-start; }
+
+.cw { margin-bottom: 0px; }
+
+.cx { margin-top: -32px; }
+
+.cy { flex-wrap: wrap; }
+
+.db { margin-top: 32px; }
+
+.dc { margin-right: 24px; }
+
+.de { height: 35px; }
+
+.df { width: 112px; }
+
+.dg { margin-bottom: -3px; }
+
+.dh { margin-left: 14px; }
+
+.di { margin-top: -3px; }
+
+.dj { fill: rgb(251, 255, 255); }
+
+.dk { padding-top: 1px; }
+
+.dl { height: 70px; }
+
+.dn { font-size: 16px; }
+
+.do { line-height: 24px; }
+
+.dp::before { margin-bottom: -10px; }
+
+.dq::before { content: ""; }
+
+.dr::before { display: table; }
+
+.ds::before { border-collapse: collapse; }
+
+.dt::after { margin-top: -6px; }
+
+.du::after { content: ""; }
+
+.dv::after { display: table; }
+
+.dw::after { border-collapse: collapse; }
+
+.dx { color: rgb(117, 117, 117); }
+
+.dy { margin-right: 12px; }
+
+.dz { display: inline-flex; }
+
+.ea { color: inherit; }
+
+.eb { fill: inherit; }
+
+.ee:disabled { color: rgb(117, 117, 117); }
+
+.ef:disabled { fill: rgb(117, 117, 117); }
+
+.eg { margin-left: 12px; }
+
+.eh { margin: 0px 12px; }
+
+.ei { position: absolute; }
+
+.ej { right: 24px; }
+
+.ek { margin: 0px; }
+
+.el { border: 0px; }
+
+.em { padding: 0px; }
+
+.en { cursor: pointer; }
+
+.eo { stroke: rgb(117, 117, 117); }
+
+.er { left: 0px; }
+
+.es { opacity: 0; }
+
+.et { position: fixed; }
+
+.eu { right: 0px; }
+
+.ev { top: 0px; }
+
+.ex { height: 60px; }
+
+.fa { height: 100%; }
+
+.fd { color: rgb(102, 138, 170); }
+
+.fe { fill: rgb(102, 138, 170); }
+
+.ff { border-color: rgb(102, 138, 170); }
+
+.fj:disabled:hover { color: rgb(102, 138, 170); }
+
+.fk:disabled:hover { fill: rgb(102, 138, 170); }
+
+.fl:disabled:hover { border-color: rgb(102, 138, 170); }
+
+.fm { margin-left: 16px; }
+
+.fs { margin-left: auto; }
+
+.ft { margin-right: auto; }
+
+.fu { max-width: 728px; }
+
+.fv { background: rgb(255, 255, 255); }
+
+.fw { border: 1px solid rgb(230, 230, 230); }
+
+.fx { border-radius: 4px; }
+
+.fy { box-shadow: rgb(230, 230, 230) 0px 1px 4px; }
+
+.fz { max-height: 100vh; }
+
+.ga { overflow-y: auto; }
+
+.gb { top: calc(100vh + 100px); }
+
+.gc { bottom: calc(100vh + 100px); }
+
+.gd { width: 10px; }
+
+.ge { pointer-events: none; }
+
+.gf { word-break: break-word; }
+
+.gg { overflow-wrap: break-word; }
+
+.gh::after { display: block; }
+
+.gi::after { clear: both; }
+
+.gj { max-width: 680px; }
+
+.gk { line-height: 18px; }
+
+.gl { letter-spacing: 0.077em; }
+
+.gm { font-style: normal; }
+
+.gn { font-size: 13px; }
+
+.gt { margin-bottom: -0.31em; }
+
+.gu { text-transform: uppercase; }
+
+.gv { line-height: 1.23; }
+
+.gw { letter-spacing: 0px; }
+
+.gx { font-weight: 700; }
+
+.hs { margin-bottom: -0.27em; }
+
+.ht { color: rgb(41, 41, 41); }
+
+.hu { line-height: 1.394; }
+
+.ik { margin-bottom: -0.42em; }
+
+.io { border-radius: 50%; }
+
+.ip { height: 28px; }
+
+.iq { width: 28px; }
+
+.ir { margin-left: 8px; }
+
+.is { margin: 0px 4px; }
+
+.it { margin: 0px 7px; }
+
+.iu { align-items: flex-end; }
+
+.jd { margin: 0px 6px 0px 7px; }
+
+.je { max-width: 2832px; }
+
+.jf { margin-top: 33px; }
+
+.jg { clear: both; }
+
+.ji { cursor: zoom-in; }
+
+.jj { z-index: auto; }
+
+.jl { transition: opacity 100ms ease 400ms; }
+
+.jm { overflow: hidden; }
+
+.jn { will-change: transform; }
+
+.jo { transform: translateZ(0px); }
+
+.jp { margin: auto; }
+
+.jq { background-color: rgb(242, 242, 242); }
+
+.jr { padding-bottom: 67.2857%; }
+
+.js { height: 0px; }
+
+.jt { filter: blur(20px); }
+
+.ju { transform: scale(1.1); }
+
+.jv { visibility: visible; }
+
+.jw { margin-top: 10px; }
+
+.jx { text-align: center; }
+
+.ka { text-decoration: underline; }
+
+.kb { line-height: 1.18; }
+
+.kc { letter-spacing: -0.022em; }
+
+.kd { font-weight: 500; }
+
+.kq { line-height: 1.58; }
+
+.kr { letter-spacing: -0.004em; }
+
+.ks { font-family: charter, Georgia, Cambria, "Times New Roman", Times, ser=
+if; }
+
+.ll { margin-bottom: -0.46em; }
+
+.lm { font-style: italic; }
+
+.ls { max-width: 1212px; }
+
+.ly { padding-bottom: 22%; }
+
+.lz { font-style: inherit; }
+
+.ma { list-style-type: decimal; }
+
+.mb { margin-left: 30px; }
+
+.mc { padding-left: 0px; }
+
+.mi { max-width: 625px; }
+
+.mj { padding-bottom: 34.88%; }
+
+.mk { box-shadow: rgb(41, 41, 41) 3px 0px 0px 0px inset; }
+
+.ml { padding-left: 23px; }
+
+.mm { margin-left: -20px; }
+
+.mn { padding-bottom: 100%; }
+
+.mo { max-width: 600px; }
+
+.mp { padding-bottom: 83.3333%; }
+
+.mq { max-width: 569px; }
+
+.mr { padding-bottom: 27.5923%; }
+
+.ms { max-width: 568px; }
+
+.mt { padding-bottom: 52.8169%; }
+
+.mu { margin-bottom: 14px; }
+
+.mv { padding-top: 24px; }
+
+.mw { padding-bottom: 10px; }
+
+.mx { background-color: rgb(8, 8, 8); }
+
+.my { height: 3px; }
+
+.mz { width: 3px; }
+
+.na { margin-right: 20px; }
+
+.nb { will-change: opacity; }
+
+.nc { width: 188px; }
+
+.nd { left: 50%; }
+
+.ne { transform: translateX(406px); }
+
+.nf { top: calc(133px); }
+
+.ni { will-change: opacity, transform; }
+
+.nj { transform: translateY(159px); }
+
+.nl { width: 197px; }
+
+.nm { margin-bottom: 20px; }
+
+.nn { padding-bottom: 5px; }
+
+.no { padding-top: 2px; }
+
+.np { padding-top: 20px; }
+
+.nq { color: rgb(255, 255, 255); }
+
+.nr { fill: rgb(255, 255, 255); }
+
+.ns { background: rgb(102, 138, 170); }
+
+.nu:disabled:hover { background: rgb(102, 138, 170); }
+
+.nv { stroke: rgb(242, 242, 242); }
+
+.nw { height: 36px; }
+
+.nx { width: 36px; }
+
+.ny { color: rgb(242, 242, 242); }
+
+.nz { fill: rgb(242, 242, 242); }
+
+.oa { background: rgb(242, 242, 242); }
+
+.ob { border-color: rgb(242, 242, 242); }
+
+.oh { padding-top: 32px; }
+
+.oi { border-top: 1px solid rgb(230, 230, 230); }
+
+.oj { justify-content: space-evenly; }
+
+.op { user-select: none; }
+
+.oq { outline: 0px; }
+
+.or { border: 0px; }
+
+.os { user-select: none; }
+
+.ot > svg { pointer-events: none; }
+
+.pe button { text-align: left; }
+
+.pf { margin-top: 2px; }
+
+.pg { fill: rgb(61, 61, 61); }
+
+.ph { opacity: 1; }
+
+.pi { padding-left: 6px; }
+
+.pj { margin-top: 1px; }
+
+.pk { margin-top: 40px; }
+
+.pl { padding-bottom: 25px; }
+
+.pm { margin-top: 25px; }
+
+.pn { max-width: 155px; }
+
+.pu { top: 1px; }
+
+.px { margin-left: 24px; }
+
+.py { margin-top: 4px; }
+
+.pz { margin-left: 4px; }
+
+.qa { margin-top: 5px; }
+
+.qb { padding-bottom: 40px; }
+
+.qc { list-style-type: none; }
+
+.qd { margin-right: 8px; }
+
+.qe { margin-bottom: 8px; }
+
+.qf { line-height: 22px; }
+
+.qg { border-radius: 3px; }
+
+.qh { padding: 5px 10px; }
+
+.qi { padding-bottom: 4px; }
+
+.qj { background-color: rgb(250, 250, 250); }
+
+.qz { text-overflow: ellipsis; }
+
+.ra { display: -webkit-box; }
+
+.rb { -webkit-line-clamp: 2; }
+
+.rc { -webkit-box-orient: vertical; }
+
+.re { padding-top: 5px; }
+
+.rf { padding-top: 25px; }
+
+.rl { max-width: 100%; }
+
+.rm { margin-bottom: 96px; }
+
+.rn { margin-bottom: 40px; }
+
+.ro { margin-top: 24px; }
+
+.rp { padding-bottom: 16px; }
+
+.rq { border-bottom: 1px solid rgb(230, 230, 230); }
+
+.rr { margin-bottom: 24px; }
+
+.td { flex-grow: 0; }
+
+.te { padding-bottom: 24px; }
+
+.tf { max-width: 500px; }
+
+.tg { flex: 0 1 auto; }
+
+.ti { padding-bottom: 8px; }
+
+.ud { }
+
+.ue:disabled { color: rgba(26, 137, 23, 0.3); }
+
+.uf:disabled { fill: rgba(26, 137, 23, 0.3); }
+
+.ug { top: calc(100vh + 444px); }
+
+.uh { transform: translateY(430px); }
+
+.un { -webkit-line-clamp: 1; }
+
+.uo { padding-right: 168px; }
+
+.up { top: 0px; }
+
+.uq { left: 0px; }
+
+.ur { background-color: rgba(0, 0, 0, 0.08); }
+
+.us { z-index: 510; }
+
+.ut { transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0s; }
+
+.uu { width: 414px; }
+
+.uv { z-index: 520; }
+
+.uw { background-color: white; }
+
+.ux { left: 100%; }
+
+.uy { overflow: auto; }
+
+.uz { }
+
+.va { box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; }
+
+.vb { transform: translateX(0px); }
+
+.vc { transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0s, opacity=
+ 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0s; }
+
+.vj { padding-bottom: 18px; }
+
+.vk { padding: 24px; }
+
+.vl { font-size: 20px; }
+
+.vm { right: -7px; }
+
+.vn { fill: rgb(117, 117, 117); }
+
+.vo { height: 80vh; }
+
+.vp { font-weight: 200; }
+
+.vq { margin-right: -4px; }
+
+.vt { transform: translateY(86px); }
+
+.vu { height: 32px; }
+
+.vv { overflow: visible; }
+
+.vw { border-radius: 1000px; }
+
+.vx { background-color: rgba(53, 88, 118, 0.8); }
+
+.vy { fill: rgb(197, 210, 225); }
+
+.vz { padding: 4px; }
+
+.wa { margin-right: 10px; }
+
+.wb { border: none; }
+
+.wc { outline: none; }
+
+.wd { font: inherit; }
+
+.we { background-color: transparent; }
+
+.wf::placeholder { color: rgb(197, 210, 225); }
+
+.wg { width: 0px; }
+
+.wh { transition: width 140ms ease-in 0s, padding 140ms ease-in 0s; }
+
+.wk:disabled { color: rgb(197, 210, 225); }
+
+.wl:disabled { fill: rgb(197, 210, 225); }
+
+.wm { padding: 4px 12px 6px; }
+
+.wn { margin-right: 32px; }
+
+.wo { margin-bottom: -16px; }
+
+.wp { margin-top: -14px; }
+
+.wq path { fill: rgb(41, 41, 41); }
+
+.wr { padding-right: 1px; }
+
+.ws path { fill: rgb(8, 8, 8); }
+
+.wt { stroke: rgb(102, 138, 170); }
+
+.wu { stroke: rgb(255, 255, 255); }
+
+.wv { margin-top: 8px; }
+
+.ww { display: grid; }
+
+.wx { grid-template-columns: auto 1fr auto; }
+
+.wy { margin-bottom: 32px; }
+
+.wz { padding-right: 12px; }
+
+.xa { height: 20px; }
+
+.xb { width: 20px; }
+
+.xc { max-height: 20px; }
+
+.xd { word-break: break-all; }
+
+.xe { padding-right: 10px; }
+
+.xf { transform: translateY(88px); }
+
+.xg { border-top: 3px solid rgb(102, 138, 170); }
+
+.xh { padding: 32px 32px 26px; }
+
+.xi { margin-bottom: 25px; }
+
+.xk { min-height: 0px; }
+
+.xl { padding-bottom: 0px; }
+
+.xm { padding-top: 4px; }
+
+.xn { padding-top: 8px; }
+
+.xq { margin: 10px 20px 10px 0px; }
+
+.xs { padding: 0px 8px; }
+
+.xt { padding-right: 8px; }
+
+.xu { margin: 10px 0px; }
+
+.xv { max-width: 380px; }
+
+.xw { min-height: 263px; }
+
+.xx { padding: 32px 0px; }
+
+.xy { background-color: rgba(0, 0, 0, 0.9); }
+
+.ym:disabled { color: rgba(255, 255, 255, 0.7); }
+
+.yn:disabled { fill: rgba(255, 255, 255, 0.7); }
+
+.yo { height: 22px; }
+
+.yu { width: 200px; }
+
+.yv { color: rgba(255, 255, 255, 0.98); }
+
+.yz { color: rgba(255, 255, 255, 0.7); }
+
+.bn:hover { color: rgb(251, 255, 255); }
+
+.bo:hover { fill: rgb(251, 255, 255); }
+
+.bp:hover { border-color: rgb(251, 255, 255); }
+
+.bq:hover { cursor: pointer; }
+
+.ec:hover { color: rgb(25, 25, 25); }
+
+.ed:hover { fill: rgb(25, 25, 25); }
+
+.fg:hover { color: rgb(90, 118, 144); }
+
+.fh:hover { fill: rgb(90, 118, 144); }
+
+.fi:hover { border-color: rgb(90, 118, 144); }
+
+.nt:hover { background: rgb(90, 118, 144); }
+
+.oc:hover { background: rgb(242, 242, 242); }
+
+.od:hover { border-color: rgb(242, 242, 242); }
+
+.oe:hover { cursor: wait; }
+
+.of:hover { color: rgb(242, 242, 242); }
+
+.og:hover { fill: rgb(242, 242, 242); }
+
+.ow:hover { fill: rgb(117, 117, 117); }
+
+.tq:hover { text-decoration: underline; }
+
+.vr:hover { fill: rgb(8, 8, 8); }
+
+.wi:hover { color: rgb(242, 248, 253); }
+
+.wj:hover { fill: rgb(242, 248, 253); }
+
+.yk:hover { color: rgba(255, 255, 255, 0.99); }
+
+.yl:hover { fill: rgba(255, 255, 255, 0.99); }
+
+.jk:focus { transform: scale(1.01); }
+
+.ov:focus { fill: rgb(117, 117, 117); }
+
+.vs:focus { fill: rgb(8, 8, 8); }
+
+.ou:active { border-style: none; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-469697e8-e451-480a-b378-dd85f76cb8a5@mhtml.blink
+
+@charset "utf-8";
+
+.d { display: none; }
+
+.w { display: flex; }
+
+.ay { margin: 0px 64px; }
+
+.fr { padding: 0px 16px; }
+
+.gs { margin-top: 3.88em; }
+
+.ho { font-size: 46px; }
+
+.hp { margin-top: 0.17em; }
+
+.hq { line-height: 56px; }
+
+.hr { letter-spacing: -0.011em; }
+
+.ih { font-size: 22px; }
+
+.ii { margin-top: 0.92em; }
+
+.ij { line-height: 28px; }
+
+.jb { margin-left: 30px; }
+
+.ko { margin-top: 1.72em; }
+
+.kp { letter-spacing: 0px; }
+
+.lh { font-size: 21px; }
+
+.li { margin-top: 0.86em; }
+
+.lj { line-height: 32px; }
+
+.lk { letter-spacing: -0.003em; }
+
+.lr { margin-top: 2em; }
+
+.lx { margin-top: 56px; }
+
+.mh { margin-top: 1.05em; }
+
+.oo { margin-right: 5px; }
+
+.pd { margin-top: 0px; }
+
+.pt { margin-top: 5px; }
+
+.pw { display: inline-block; }
+
+.qw { font-size: 20px; }
+
+.qx { line-height: 24px; }
+
+.qy { max-height: 48px; }
+
+.rk { margin: 0px; }
+
+.sg { width: calc(100% + 32px); }
+
+.sh { margin-left: -16px; }
+
+.si { margin-right: -16px; }
+
+.sz { padding-left: 16px; }
+
+.ta { padding-right: 16px; }
+
+.tb { flex-basis: 25%; }
+
+.tc { max-width: 25%; }
+
+.tn { font-size: 16px; }
+
+.to { line-height: 20px; }
+
+.ub { min-width: 70px; }
+
+.uc { min-height: 70px; }
+
+.um { max-height: 24px; }
+
+.yi { align-items: center; }
+
+.yj { flex-direction: row; }
+
+.yt { padding: 0px; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-254a10be-abb1-4c5a-abf6-2b1c98054bfa@mhtml.blink
+
+@charset "utf-8";
+
+.e { display: none; }
+
+.ja { margin-left: 30px; }
+
+.jy { margin-left: auto; }
+
+.jz { text-align: center; }
+
+.pc { margin-top: 0px; }
+
+.ps { margin-top: 5px; }
+
+.pv { display: inline-block; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f11e486a-58d6-4e68-bb91-ceffa622deb0@mhtml.blink
+
+@charset "utf-8";
+
+.f { display: none; }
+
+.iz { margin-left: 30px; }
+
+.pb { margin-top: 0px; }
+
+.pq { display: inline-block; }
+
+.pr { margin-top: 5px; }
+
+.th { margin-right: 16px; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-9f46c8e8-df08-42f8-937c-5502c099fcec@mhtml.blink
+
+@charset "utf-8";
+
+.g { display: none; }
+
+.u { margin-bottom: 20px; }
+
+.am { box-shadow: rgb(230, 230, 230) 0px -1px 0px inset; }
+
+.an { min-height: 230px; }
+
+.ar { display: block; }
+
+.cq { min-height: 98px; }
+
+.cr { display: flex; }
+
+.cs { align-items: flex-start; }
+
+.ct { flex-direction: column; }
+
+.cu { justify-content: flex-end; }
+
+.cz { margin-bottom: 28px; }
+
+.da { margin-top: 0px; }
+
+.dd { margin-top: 28px; }
+
+.dm { margin: 0px; }
+
+.ep { border-top: 1px solid rgb(230, 230, 230); }
+
+.eq { border-bottom: 1px solid rgb(230, 230, 230); }
+
+.fb { align-items: center; }
+
+.fc { flex: 1 0 auto; }
+
+.im { margin-top: 32px; }
+
+.in { flex-direction: column-reverse; }
+
+.ix { margin-bottom: 30px; }
+
+.iy { margin-left: 0px; }
+
+.oz { margin-top: 2px; }
+
+.pa { margin-right: 16px; }
+
+.pp { display: inline-block; }
+
+.rs { padding-bottom: 12px; }
+
+.rt { margin-top: 16px; }
+
+.tr { margin-left: 16px; }
+
+.ts { margin-right: 0px; }
+
+.vd { left: 0px; }
+
+.ve { width: 100%; }
+
+.vf { border-top-left-radius: 20px; }
+
+.vg { border-top-right-radius: 20px; }
+
+.vh { transform: translateY(100%); }
+
+.vi { }
+
+.xj { padding: 24px 24px 28px; }
+
+.xz { padding: 28px 0px 12px; }
+
+.yw { padding: 20px 0px; }
+
+.yx { border-top: 1px solid rgba(255, 255, 255, 0.54); }
+
+.yy { margin-top: 0px; }
+
+.za { margin-bottom: 16px; }
+
+.zb { flex-direction: row; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-21011656-5502-46f1-b395-5ca3d67d8d43@mhtml.blink
+
+@charset "utf-8";
+
+.h { display: none; }
+
+.au { margin: 0px 24px; }
+
+.ey { display: block; }
+
+.fn { padding: 0px 8px 24px; }
+
+.go { margin-top: 2.64em; }
+
+.gy { font-size: 32px; }
+
+.gz { margin-top: 0.51em; }
+
+.ha { line-height: 40px; }
+
+.hb { letter-spacing: -0.016em; }
+
+.hv { font-size: 18px; }
+
+.hw { margin-top: 0.79em; }
+
+.hx { line-height: 24px; }
+
+.il { margin-top: 32px; }
+
+.iv { margin-bottom: 30px; }
+
+.iw { margin-left: 0px; }
+
+.ke { font-size: 20px; }
+
+.kf { margin-top: 1.23em; }
+
+.kg { letter-spacing: 0px; }
+
+.kt { margin-top: 0.67em; }
+
+.ku { line-height: 28px; }
+
+.kv { letter-spacing: -0.003em; }
+
+.ln { margin-top: 1.56em; }
+
+.lt { margin-top: 40px; }
+
+.md { margin-top: 1.34em; }
+
+.ok { margin-left: 8px; }
+
+.ox { margin-top: 2px; }
+
+.oy { margin-right: 16px; }
+
+.po { display: inline-block; }
+
+.qk { font-size: 16px; }
+
+.ql { line-height: 20px; }
+
+.qm { max-height: 40px; }
+
+.rg { margin: 0px; }
+
+.ru { width: calc(100% + 24px); }
+
+.rv { margin-left: -12px; }
+
+.rw { margin-right: -12px; }
+
+.sj { padding-left: 12px; }
+
+.sk { padding-right: 12px; }
+
+.sl { flex-basis: 100%; }
+
+.sm { max-width: 100%; }
+
+.tp { margin-bottom: 0px; }
+
+.tt { min-width: 48px; }
+
+.tu { min-height: 48px; }
+
+.ui { max-height: 20px; }
+
+.xo { font-size: 14px; }
+
+.xr { margin: 10px 0px 0px; }
+
+.ya { align-items: flex-start; }
+
+.yb { flex-direction: column; }
+
+.yp { padding: 20px 0px 28px; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b6cb42a3-29aa-4b1f-ab73-78b56c10c628@mhtml.blink
+
+@charset "utf-8";
+
+.i { display: none; }
+
+.x { display: flex; }
+
+.ax { margin: 0px 64px; }
+
+.fq { padding: 0px 16px; }
+
+.gr { margin-top: 3.88em; }
+
+.hk { font-size: 46px; }
+
+.hl { margin-top: 0.17em; }
+
+.hm { line-height: 56px; }
+
+.hn { letter-spacing: -0.011em; }
+
+.ie { font-size: 22px; }
+
+.if { margin-top: 0.92em; }
+
+.ig { line-height: 28px; }
+
+.km { margin-top: 1.72em; }
+
+.kn { letter-spacing: 0px; }
+
+.ld { font-size: 21px; }
+
+.le { margin-top: 0.86em; }
+
+.lf { line-height: 32px; }
+
+.lg { letter-spacing: -0.003em; }
+
+.lq { margin-top: 2em; }
+
+.lw { margin-top: 56px; }
+
+.mg { margin-top: 1.05em; }
+
+.on { margin-right: 5px; }
+
+.qt { font-size: 20px; }
+
+.qu { line-height: 24px; }
+
+.qv { max-height: 48px; }
+
+.rj { margin: 0px; }
+
+.sd { width: calc(100% + 32px); }
+
+.se { margin-left: -16px; }
+
+.sf { margin-right: -16px; }
+
+.sv { padding-left: 16px; }
+
+.sw { padding-right: 16px; }
+
+.sx { flex-basis: 25%; }
+
+.sy { max-width: 25%; }
+
+.tl { font-size: 16px; }
+
+.tm { line-height: 20px; }
+
+.tz { min-width: 70px; }
+
+.ua { min-height: 70px; }
+
+.ul { max-height: 24px; }
+
+.yg { align-items: center; }
+
+.yh { flex-direction: row; }
+
+.ys { padding: 0px; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-e63acd4d-2073-4790-82a2-cf6db6f87c5d@mhtml.blink
+
+@charset "utf-8";
+
+.j { display: none; }
+
+.y { display: flex; }
+
+.aw { margin: 0px 48px; }
+
+.fp { padding: 0px 16px; }
+
+.gq { margin-top: 3.88em; }
+
+.hg { font-size: 46px; }
+
+.hh { margin-top: 0.17em; }
+
+.hi { line-height: 56px; }
+
+.hj { letter-spacing: -0.011em; }
+
+.ib { font-size: 22px; }
+
+.ic { margin-top: 0.92em; }
+
+.id { line-height: 28px; }
+
+.kk { margin-top: 1.72em; }
+
+.kl { letter-spacing: 0px; }
+
+.kz { font-size: 21px; }
+
+.la { margin-top: 0.86em; }
+
+.lb { line-height: 32px; }
+
+.lc { letter-spacing: -0.003em; }
+
+.lp { margin-top: 2em; }
+
+.lv { margin-top: 56px; }
+
+.mf { margin-top: 1.05em; }
+
+.om { margin-right: 5px; }
+
+.qq { font-size: 20px; }
+
+.qr { line-height: 24px; }
+
+.qs { max-height: 48px; }
+
+.ri { margin: 0px; }
+
+.sa { width: calc(100% + 28px); }
+
+.sb { margin-left: -14px; }
+
+.sc { margin-right: -14px; }
+
+.sr { padding-left: 14px; }
+
+.ss { padding-right: 14px; }
+
+.st { flex-basis: 50%; }
+
+.su { max-width: 50%; }
+
+.tj { font-size: 16px; }
+
+.tk { line-height: 20px; }
+
+.tx { min-width: 48px; }
+
+.ty { min-height: 48px; }
+
+.uk { max-height: 24px; }
+
+.ye { align-items: center; }
+
+.yf { flex-direction: row; }
+
+.yr { padding: 0px; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8853e165-f11c-4627-95e5-613b81eb2749@mhtml.blink
+
+@charset "utf-8";
+
+.k { display: none; }
+
+.av { margin: 0px 24px; }
+
+.ez { display: block; }
+
+.fo { padding: 0px 8px 24px; }
+
+.gp { margin-top: 2.64em; }
+
+.hc { font-size: 32px; }
+
+.hd { margin-top: 0.51em; }
+
+.he { line-height: 40px; }
+
+.hf { letter-spacing: -0.016em; }
+
+.hy { font-size: 18px; }
+
+.hz { margin-top: 0.79em; }
+
+.ia { line-height: 24px; }
+
+.kh { font-size: 20px; }
+
+.ki { margin-top: 1.23em; }
+
+.kj { letter-spacing: 0px; }
+
+.kw { margin-top: 0.67em; }
+
+.kx { line-height: 28px; }
+
+.ky { letter-spacing: -0.003em; }
+
+.lo { margin-top: 1.56em; }
+
+.lu { margin-top: 40px; }
+
+.me { margin-top: 1.34em; }
+
+.ol { margin-left: 8px; }
+
+.qn { font-size: 16px; }
+
+.qo { line-height: 20px; }
+
+.qp { max-height: 40px; }
+
+.rh { margin: 0px; }
+
+.rx { width: calc(100% + 24px); }
+
+.ry { margin-left: -12px; }
+
+.rz { margin-right: -12px; }
+
+.sn { padding-left: 12px; }
+
+.so { padding-right: 12px; }
+
+.sp { flex-basis: 100%; }
+
+.sq { max-width: 100%; }
+
+.tv { min-width: 48px; }
+
+.tw { min-height: 48px; }
+
+.uj { max-height: 20px; }
+
+.xp { font-size: 14px; }
+
+.yc { align-items: flex-start; }
+
+.yd { flex-direction: column; }
+
+.yq { padding: 20px 0px 28px; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-51b138f5-e5ee-47eb-8a5b-b0ec40030ee9@mhtml.blink
+
+@charset "utf-8";
+
+.jc { display: none; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-a448812e-4ac6-4fa7-a8d2-1d0dbbd6c945@mhtml.blink
+
+@charset "utf-8";
+
+.ew { animation: 0.2s ease-in-out 0s 1 normal both running k3; }
+
+.jh { transition: transform 300ms cubic-bezier(0.2, 0, 0.2, 1) 0s; }
+
+.ng { transition: opacity 200ms ease 0s; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-ad91c8c6-c8f6-4d91-baf6-8a6f62253238@mhtml.blink
+
+@charset "utf-8";
+
+.nh { display: none; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-88d2d988-0232-4d64-96e4-86e07c0fb56b@mhtml.blink
+
+@charset "utf-8";
+
+.nk { display: none; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-01cabbfd-e4b2-415d-ad0e-5826ee3e302c@mhtml.blink
+
+@charset "utf-8";
+
+.rd { max-height: none; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://glyph.medium.com/css/unbound.css
+
+@charset "utf-8";
+
+@font-face { font-family: charter; font-weight: 400; font-style: italic; sr=
+c: url("https://glyph.medium.com/font/81d2bf1/0-3j_4g_53_6bu_6c4_6c8_6c9_6c=
+c_6cd_6ci_6cm/charter-400-italic.woff") format("woff"); unicode-range: U+0-=
+7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2=
+026; }
+
+@font-face { font-family: charter; font-weight: 400; font-style: italic; sr=
+c: url("https://glyph.medium.com/font/81d2bf1/3k-4f_4h-52_54-6bt_6bv-6c3_6c=
+5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-400-italic.woff") format("wo=
+ff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017,=
+ U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: charter; font-weight: 400; font-style: normal; sr=
+c: url("https://glyph.medium.com/font/be78681/0-3j_4g_53_6bu_6c4_6c8_6c9_6c=
+c_6cd_6ci_6cm/charter-400-normal.woff") format("woff"); unicode-range: U+0-=
+7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2=
+026; }
+
+@font-face { font-family: charter; font-weight: 400; font-style: normal; sr=
+c: url("https://glyph.medium.com/font/be78681/3k-4f_4h-52_54-6bt_6bv-6c3_6c=
+5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-400-normal.woff") format("wo=
+ff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017,=
+ U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: charter; font-weight: 700; font-style: italic; sr=
+c: url("https://glyph.medium.com/font/77a0c0c/0-3j_4g_53_6bu_6c4_6c8_6c9_6c=
+c_6cd_6ci_6cm/charter-700-italic.woff") format("woff"); unicode-range: U+0-=
+7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2=
+026; }
+
+@font-face { font-family: charter; font-weight: 700; font-style: italic; sr=
+c: url("https://glyph.medium.com/font/77a0c0c/3k-4f_4h-52_54-6bt_6bv-6c3_6c=
+5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-700-italic.woff") format("wo=
+ff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017,=
+ U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: charter; font-weight: 700; font-style: normal; sr=
+c: url("https://glyph.medium.com/font/f50d520/0-3j_4g_53_6bu_6c4_6c8_6c9_6c=
+c_6cd_6ci_6cm/charter-700-normal.woff") format("woff"); unicode-range: U+0-=
+7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2=
+026; }
+
+@font-face { font-family: charter; font-weight: 700; font-style: normal; sr=
+c: url("https://glyph.medium.com/font/f50d520/3k-4f_4h-52_54-6bt_6bv-6c3_6c=
+5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-700-normal.woff") format("wo=
+ff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017,=
+ U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: fell; font-weight: 400; font-style: italic; src: =
+url("https://glyph.medium.com/font/415369b/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6=
+cd_6ci_6cm/fell-400-italic.woff") format("woff"); unicode-range: U+0-7F, U+=
+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026; }
+
+@font-face { font-family: fell; font-weight: 400; font-style: italic; src: =
+url("https://glyph.medium.com/font/415369b/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6=
+c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/fell-400-italic.woff") format("woff"); =
+unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201=
+A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: fell; font-weight: 400; font-style: normal; src: =
+url("https://glyph.medium.com/font/78ce731/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6=
+cd_6ci_6cm/fell-400-normal.woff") format("woff"); unicode-range: U+0-7F, U+=
+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026; }
+
+@font-face { font-family: fell; font-weight: 400; font-style: normal; src: =
+url("https://glyph.medium.com/font/78ce731/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6=
+c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/fell-400-normal.woff") format("woff"); =
+unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201=
+A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: gt-super; font-weight: 400; font-style: normal; s=
+rc: url("https://glyph.medium.com/font/4a44748/0-3j_4g_53_6bu_6c4_6c8_6c9_6=
+cc_6cd_6ci_6cm/gt-super-400-normal.woff") format("woff"); unicode-range: U+=
+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U=
++2026; }
+
+@font-face { font-family: gt-super; font-weight: 400; font-style: normal; s=
+rc: url("https://glyph.medium.com/font/4a44748/3k-4f_4h-52_54-6bt_6bv-6c3_6=
+c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/gt-super-400-normal.woff") format("=
+woff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-201=
+7, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: noe; font-weight: 500; font-style: normal; src: u=
+rl("https://glyph.medium.com/font/b6752aa/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6c=
+d_6ci_6cm/noe-display-500-normal.woff") format("woff"); unicode-range: U+0-=
+7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2=
+026; }
+
+@font-face { font-family: noe; font-weight: 500; font-style: normal; src: u=
+rl("https://glyph.medium.com/font/b6752aa/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c=
+7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/noe-display-500-normal.woff") format("wo=
+ff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017,=
+ U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: opendyslexic; font-weight: 400; font-style: itali=
+c; src: url("https://glyph.medium.com/font/1c491fd/0-3j_4g_53_6bu_6c4_6c8_6=
+c9_6cc_6cd_6ci_6cm/opendyslexic-400-italic.woff") format("woff"); unicode-r=
+ange: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U=
++2022, U+2026; }
+
+@font-face { font-family: opendyslexic; font-weight: 400; font-style: itali=
+c; src: url("https://glyph.medium.com/font/1c491fd/3k-4f_4h-52_54-6bt_6bv-6=
+c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/opendyslexic-400-italic.woff") =
+format("woff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+=
+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: opendyslexic; font-weight: 400; font-style: norma=
+l; src: url("https://glyph.medium.com/font/0a6190b/0-3j_4g_53_6bu_6c4_6c8_6=
+c9_6cc_6cd_6ci_6cm/opendyslexic-400-normal.woff") format("woff"); unicode-r=
+ange: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U=
++2022, U+2026; }
+
+@font-face { font-family: opendyslexic; font-weight: 400; font-style: norma=
+l; src: url("https://glyph.medium.com/font/0a6190b/3k-4f_4h-52_54-6bt_6bv-6=
+c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/opendyslexic-400-normal.woff") =
+format("woff"); unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+=
+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 300; font-style: italic; src:=
+ url("https://glyph.medium.com/font/51a79f1/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-300-italic.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 300; font-style: italic; src:=
+ url("https://glyph.medium.com/font/51a79f1/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-300-italic.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 300; font-style: normal; src:=
+ url("https://glyph.medium.com/font/6fd11d6/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-300-normal.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 300; font-style: normal; src:=
+ url("https://glyph.medium.com/font/6fd11d6/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-300-normal.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 400; font-style: italic; src:=
+ url("https://glyph.medium.com/font/3887986/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-400-italic.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 400; font-style: italic; src:=
+ url("https://glyph.medium.com/font/3887986/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-400-italic.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 400; font-style: normal; src:=
+ url("https://glyph.medium.com/font/b492c44/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-400-normal.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 400; font-style: normal; src:=
+ url("https://glyph.medium.com/font/b492c44/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-400-normal.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 500; font-style: italic; src:=
+ url("https://glyph.medium.com/font/54b52d6/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-500-italic.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 500; font-style: italic; src:=
+ url("https://glyph.medium.com/font/54b52d6/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-500-italic.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 500; font-style: normal; src:=
+ url("https://glyph.medium.com/font/df9ba7f/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-500-normal.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 500; font-style: normal; src:=
+ url("https://glyph.medium.com/font/df9ba7f/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-500-normal.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 700; font-style: italic; src:=
+ url("https://glyph.medium.com/font/9da4d76/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-700-italic.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 700; font-style: italic; src:=
+ url("https://glyph.medium.com/font/9da4d76/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-700-italic.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+
+@font-face { font-family: sohne; font-weight: 700; font-style: normal; src:=
+ url("https://glyph.medium.com/font/cf896f3/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_=
+6cd_6ci_6cm/sohne-700-normal.woff") format("woff"); unicode-range: U+0-7F, =
+U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;=
+ }
+
+@font-face { font-family: sohne; font-weight: 700; font-style: normal; src:=
+ url("https://glyph.medium.com/font/cf896f3/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-=
+6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-700-normal.woff") format("woff")=
+; unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+2=
+01A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF; }
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg----
+Content-Type: text/html
+Content-ID: <frame-1ECEFF14BFD6B511E92840E1BD4CDDAD@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://a16180790160.cdn.optimizely.com/client_storage/a16180790160.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--EG8DNrPL3Gt5ApLTHq09loV8bIDNRY7aMDoqtNyWcg------
