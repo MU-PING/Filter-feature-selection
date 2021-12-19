@@ -70,13 +70,20 @@
   ```python
   from sklearn.feature_selection import VarianceThreshold
   ```
+  
+### 相關係數 - Correlation
+* 屬於 Multivariate methods：評估全部的特徵，考慮到變數之間的關係
+* Sklearn
+
+   ```python
+   from sklearn.feature_selection import r_regression
+   ```   
    
 ### 卡方檢定 - Chi-square
 * 屬於 Multivariate methods：評估全部的特徵，考慮到變數之間的關係
 * Sklearn
 
    ```python
-   from sklearn.feature_selection import SelectKBest
    from sklearn.feature_selection import chi2
    ```
 
