@@ -89,11 +89,15 @@
    from sklearn.feature_selection import VarianceThreshold
 ```
 
-* 計算每個 「特徵」 的方差
-   
+* 計算每個 「特徵」 的方差，並設定 threshold，方差小於等於 threshold 的特徵將被移除
+
+* 若 threshold=0，可以過濾掉常數特徵(constant feature)，其代表一個特徵下的數值都是一樣的
+
+* 通常用於過濾回歸特徵，類別特徵除非為常數特徵(constant feature)，不然不推薦使用
+
 ### 卡方過濾 - Chi-square
 ```python
-   from sklearn.feature_selection import chi2
+  from sklearn.feature_selection import chi2
 ```
 
 * 計算每個 「非負數特徵」 和 「標籤」 之間的卡方統計量
@@ -121,9 +125,9 @@
 * [機器學習之特徵選擇（Feature Selection）_實用技巧_程式人生](https://www.796t.com/article.php?id=173751)
 * [特徵工程之特徵選擇概念. 特徵選擇是特徵工程裡的一個重要問題，其目標是尋找最優特徵子集。特徵選擇能剔除不相… _ by Ryan Lu _ AI反斗城 _ Medium](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E4%B9%8B%E7%89%B9%E5%BE%B5%E9%81%B8%E6%93%87%E6%A6%82%E5%BF%B5-ca11745db63c)
 * [機器學習-特徵工程-特徵選擇(feature_selection)-過濾法 _ Taroballz StudyNotes](http://www.taroballz.com/2019/06/12/ML_feature_selection_filter_method/)
-* [](https://iter01.com/502884.html)
-* [](https://towardsdatascience.com/using-the-chi-squared-test-for-feature-selection-with-implementation-b15a4dad93f1)
-* [](https://towardsdatascience.com/mistakes-in-applying-univariate-feature-selection-methods-34c43ce8b93d)
-* [](https://medium.com/analytics-vidhya/feature-selection-73bc12a9b39e#dd6f)
+* [專欄 _ 基於 Jupyter 的特徵工程手冊：特徵選擇（三） _ IT人](https://iter01.com/502884.html)
+* [Using the Chi-Squared test for feature selection with implementation _ by Dr. Saptarsi Goswami _ Towards Data Science](https://towardsdatascience.com/using-the-chi-squared-test-for-feature-selection-with-implementation-b15a4dad93f1)
+* [Mistakes in Applying Univariate Feature Selection Methods _ by Wai Jean _ Towards Data Science](https://towardsdatascience.com/mistakes-in-applying-univariate-feature-selection-methods-34c43ce8b93d)
+* [Feature Selection_ Filter Methods _ Analytics Vidhya](https://medium.com/analytics-vidhya/feature-selection-73bc12a9b39e#dd6f)
 
 > 備份於 Reference 資料夾中
