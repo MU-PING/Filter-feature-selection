@@ -36,9 +36,7 @@
 
 ## Filter methods【過濾器法】
 
-* 使用統計變量來評估特徵或特徵子集的特性
-
-* 計算統計變量的同時，設定一閥值，並根據每個特徵是否超過閥值來決定是否要選取
+* 使用統計變量來評估特徵或特徵子集的特性，再根據「挑選標準」，挑選符合標準的特徵
 
 * 選擇特徵子集時，只考慮特徵的特性，不考慮將來要使用哪一種模型進行學習
 
@@ -73,6 +71,7 @@
   
 ### 相關係數 - Correlation
 * 屬於 Multivariate methods：評估全部的特徵，考慮到變數之間的關係
+* 專門針「回歸問題」的相關性過濾
 * Sklearn
 
    ```python
@@ -80,13 +79,37 @@
    ```   
    
 ### 卡方檢定 - Chi-square
-* 屬於 Multivariate methods：評估全部的特徵，考慮到變數之間的關係
-* Sklearn
-
-   ```python
+```python
    from sklearn.feature_selection import chi2
-   ```
+```
+  
+* 屬於 Multivariate methods：評估全部的特徵，考慮到變數之間的關係
 
+* 專門針對「分類問題」的相關性過濾
+
+* 計算每個 「非負數特徵」 和 「標籤」 之間的卡方統計量
+
+* 卡方檢驗法不能計算負數；可是用以下兩種預處理方法變為正數
+  * MinMaxScalar
+  * StandardScalar
+ 
+### 挑選標準
+* sklearn 中常用的有以下 2 種：
+
+  * 選擇前 k% 高分的特徵
+    ```python
+    from sklearn.feature_selection import SelectPercentile
+    ```
+    
+  * 選擇 k 個最高分的特徵
+    ```python
+    from sklearn.feature_selection import SelectKBest 
+    ```
+  * k為一超參數，過低會刪除與模型相關且有效的特徵；過高會保留過多無用特徵，須不斷進行調整
+  
+  * 可使用學習曲線驗證法得出好的k值，但計算成本龐大
+    
+    
 ## 參考
 * [特徵選擇(feature selection) - IT閱讀](https://www.itread01.com/content/1547263108.html)
 * [特徵選擇常用演算法綜述 - IT閱讀](https://www.itread01.com/content/1550470354.html)
@@ -94,5 +117,5 @@
 * [Feature Selection 特徵選取 -Filter(ㄧ) Python sklearn 實作 _ by Jasmine＿ _ Medium](https://jasmine880809.medium.com/feature-selection-%E7%89%B9%E5%BE%B5%E9%81%B8%E5%8F%96-filter-%E3%84%A7-python-sklearn-%E5%AF%A6%E4%BD%9C-2797b941c6a9)
 * [機器學習之特徵選擇（Feature Selection）_實用技巧_程式人生](https://www.796t.com/article.php?id=173751)
 * [特徵工程之特徵選擇概念. 特徵選擇是特徵工程裡的一個重要問題，其目標是尋找最優特徵子集。特徵選擇能剔除不相… _ by Ryan Lu _ AI反斗城 _ Medium](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E4%B9%8B%E7%89%B9%E5%BE%B5%E9%81%B8%E6%93%87%E6%A6%82%E5%BF%B5-ca11745db63c)
-
+* [機器學習-特徵工程-特徵選擇(feature_selection)-過濾法 _ Taroballz StudyNotes](http://www.taroballz.com/2019/06/12/ML_feature_selection_filter_method/)
 > 備份於 Reference 資料夾中
