@@ -2,8 +2,13 @@
 ## 程式簡介
 ### 簡述
 * 使用 Sklearn 套件實作 Feature Selection 中的 **Filter methods【過濾器法】**
-* train.csv 為 Titanic 生存資料集，皆以其為 Feature Selection 的範例資料集
-* 
+
+* train.csv 為 Titanic 生存資料集，皆以其作為 Filter methods 的範例資料集
+
+* Variance.ipynb 以「方差過濾」實作 Filter methods
+
+* Chi-square.ipynb 以「卡方過濾」實作 Filter methods
+
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
 
@@ -52,11 +57,11 @@
   
   * 不會耗費大量電腦資源
 
-* 相關統計變量【僅列出有使用 sklearn 實作的】
+* 相關統計變量的過濾法【僅列出有使用 sklearn 實作的】
 
-  * 變異數 - Variance
+  * 方差過濾 - Variance
   
-  * 卡方檢定 - Chi-square
+  * 卡方過濾 - Chi-square
   
   > 除上述兩種，還有很多統計變量可用，可以上網另查
   
@@ -76,14 +81,14 @@
 
 * 可使用學習曲線驗證法得出好的k值，但計算成本龐大
   
-### 變異數 - Variance
+### 方差過濾 - Variance
 ```python
    from sklearn.feature_selection import VarianceThreshold
 ```
 
-* 計算每個 「特徵」 的變異數
+* 計算每個 「特徵」 的方差
    
-### 卡方檢定 - Chi-square
+### 卡方過濾 - Chi-square
 ```python
    from sklearn.feature_selection import chi2
 ```
