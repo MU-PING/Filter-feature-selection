@@ -2,7 +2,8 @@
 ## 程式簡介
 ### 簡述
 * 使用 Sklearn 套件實作 Feature Selection 中的 **Filter methods【過濾器法】**
-
+* train.csv 為 Titanic 生存資料集，皆以其為 Feature Selection 的範例資料集
+* 
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
 
