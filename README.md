@@ -55,8 +55,6 @@
 
   * 變異數 - Variance
   
-  * 相關係數 - Correlation
-  
   * 卡方檢定 - Chi-square
   
   > 除上述兩種，還有很多統計變量可用，可以上網另查
@@ -83,15 +81,6 @@
 ```
 
 * 計算每個 「特徵」 的變異數
-
-### 相關係數 - Correlation
- ```python
-    from sklearn.feature_selection import r_regression
- ```  
-
-* 計算每個 「特徵」 和 「標籤」 之間的相關係數
-
-* **「標籤」必須是「回歸問題」**
    
 ### 卡方檢定 - Chi-square
 ```python
@@ -110,7 +99,8 @@
   * MinMaxScalar
   * StandardScalar
   
-> !!! 傳統計算卡方值的方式中，特徵(x)與標籤(y)必須都是**類別變數**，因為需要使用頻率來構建列聯表，但sklearn 計算卡方值的方式與傳統不同，因此也可以處理特徵(x)是**回歸變數**的情況，參考：[Feature selection_ Chi-square test, F-test and mutual information - Programmer All](https://www.programmerall.com/article/5467105157/)
+> 傳統計算卡方值的方式中，特徵(x) 與 標籤(y) 必須都是**類別變數**，因為需要使用頻率來構建列聯表，但 sklearn 計算卡方值的方式與傳統不同，因此也可以處理特徵(x)是**回歸變數**的情況。  
+> 參考：[Feature selection_ Chi-square test, F-test and mutual information - Programmer All](https://www.programmerall.com/article/5467105157/)
 
 ### 【傳統】特徵(x)與標籤(y)關係之統計變量適用表    
 
