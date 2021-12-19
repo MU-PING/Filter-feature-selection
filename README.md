@@ -66,7 +66,7 @@
   > 除上述兩種，還有很多統計變量可用，可以上網另查
   
 ### 挑選標準
-* sklearn 中常用的有以下 2 種：
+* sklearn 中常用的有以下 3 種：
 
   * 選擇前 k% 高分的特徵
     ```python
@@ -77,6 +77,9 @@
     ```python
     from sklearn.feature_selection import SelectKBest 
     ```
+    
+  * 設定 threshold，低於或大於 threshold，該特徵保留或捨棄
+  
 * k為一超參數，過低會刪除與模型相關且有效的特徵；過高會保留過多無用特徵，須不斷進行調整
 
 * 可使用學習曲線驗證法得出好的k值，但計算成本龐大
@@ -113,10 +116,8 @@
 ![image](https://user-images.githubusercontent.com/93152909/146684361-e11cbfd4-8107-4dad-bb38-b2ba29df0d60.png)
     
 ## 參考
-* [特徵選擇(feature selection) - IT閱讀](https://www.itread01.com/content/1547263108.html)
 * [特徵選擇常用演算法綜述 - IT閱讀](https://www.itread01.com/content/1550470354.html)
 * [Day28 - Feature Selection -- 1. Filter methods(過濾器法) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10245037)
-* [Feature Selection 特徵選取 -Filter(ㄧ) Python sklearn 實作 _ by Jasmine＿ _ Medium](https://jasmine880809.medium.com/feature-selection-%E7%89%B9%E5%BE%B5%E9%81%B8%E5%8F%96-filter-%E3%84%A7-python-sklearn-%E5%AF%A6%E4%BD%9C-2797b941c6a9)
 * [機器學習之特徵選擇（Feature Selection）_實用技巧_程式人生](https://www.796t.com/article.php?id=173751)
 * [特徵工程之特徵選擇概念. 特徵選擇是特徵工程裡的一個重要問題，其目標是尋找最優特徵子集。特徵選擇能剔除不相… _ by Ryan Lu _ AI反斗城 _ Medium](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E4%B9%8B%E7%89%B9%E5%BE%B5%E9%81%B8%E6%93%87%E6%A6%82%E5%BF%B5-ca11745db63c)
 * [機器學習-特徵工程-特徵選擇(feature_selection)-過濾法 _ Taroballz StudyNotes](http://www.taroballz.com/2019/06/12/ML_feature_selection_filter_method/)
