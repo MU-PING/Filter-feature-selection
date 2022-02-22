@@ -9,7 +9,7 @@
 
 * train.csv 為 Titanic 生存資料集，皆以其作為 Filter methods 的範例資料集
 
-  * :heavy_check_mark:【Survival】- Survival, 0 = No、1 = Yes 【代表Label】
+  * 【Survival】- Survival, 0 = No、1 = Yes 【代表Label】
   
   * 【Pclass】- Ticket class, 1 = 1st、2 = 2nd、3 = 3rd
   
