@@ -139,14 +139,3 @@
 
 ![image](https://user-images.githubusercontent.com/93152909/146684361-e11cbfd4-8107-4dad-bb38-b2ba29df0d60.png)
     
-## 參考
-* [特徵選擇常用演算法綜述 - IT閱讀](https://www.itread01.com/content/1550470354.html)
-* [Day28 - Feature Selection -- 1. Filter methods(過濾器法) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10245037)
-* [機器學習之特徵選擇（Feature Selection）_實用技巧_程式人生](https://www.796t.com/article.php?id=173751)
-* [特徵工程之特徵選擇概念. 特徵選擇是特徵工程裡的一個重要問題，其目標是尋找最優特徵子集。特徵選擇能剔除不相… _ by Ryan Lu _ AI反斗城 _ Medium](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E4%B9%8B%E7%89%B9%E5%BE%B5%E9%81%B8%E6%93%87%E6%A6%82%E5%BF%B5-ca11745db63c)
-* [機器學習-特徵工程-特徵選擇(feature_selection)-過濾法 _ Taroballz StudyNotes](http://www.taroballz.com/2019/06/12/ML_feature_selection_filter_method/)
-* [Using the Chi-Squared test for feature selection with implementation _ by Dr. Saptarsi Goswami _ Towards Data Science](https://towardsdatascience.com/using-the-chi-squared-test-for-feature-selection-with-implementation-b15a4dad93f1)
-* [Mistakes in Applying Univariate Feature Selection Methods _ by Wai Jean _ Towards Data Science](https://towardsdatascience.com/mistakes-in-applying-univariate-feature-selection-methods-34c43ce8b93d)
-* [Feature Selection_ Filter Methods _ Analytics Vidhya](https://medium.com/analytics-vidhya/feature-selection-73bc12a9b39e#dd6f)
-
-> 備份於 Reference 資料夾中
