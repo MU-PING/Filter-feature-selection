@@ -1,4 +1,4 @@
-# filter-feature-selection
+# Filter-feature-selection
 ## 程式簡介
 ### 簡述
 * 使用 Sklearn 套件實作 Feature Selection 中的 **Filter methods【過濾器法】**
