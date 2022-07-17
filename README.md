@@ -11,11 +11,13 @@
 
   |Attribute|Description|  
   | -------- | -------- | 
-  |【**Label**】Survival|0 = No、1 = Yes|
+  |PassengerId|passenger ID|
+  |【**Label**】Survived|0 = No、1 = Yes|
   |Pclass|ticket class, 1 = 1st、2 = 2nd、3 = 3rd|
+  |Name|passenger name|
   |Sex|gender|
   |Age|age in years|
-  |Sibsp|# of siblings / spouses aboard the Titanic|
+  |SibSp|# of siblings / spouses aboard the Titanic|
   |Parch|# of parents / children aboard the Titanic|
   |Ticket|ticket number|
   |Fare|passenger fare|
