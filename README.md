@@ -9,25 +9,18 @@
 
 * train.csv 為 Titanic 生存資料集，皆以其作為 Filter methods 的範例資料集
 
-  * 【Survival】- Survival, 0 = No、1 = Yes 【代表Label】
-  
-  * 【Pclass】- Ticket class, 1 = 1st、2 = 2nd、3 = 3rd
-  
-  * 【Sex】- Sex	
-  
-  * 【Age】- Age in years	
-  
-  * 【Sibsp】- # of siblings / spouses aboard the Titanic	
-  
-  * 【Parch】- # of parents / children aboard the Titanic	
-  
-  * 【Ticket】- Ticket number	
-  
-  * 【Fare】-	Passenger fare	
-  
-  * 【Cabin】- Cabin number	
-  
-  * 【Embarked】- Port of Embarkation, C = Cherbourg、Q = Queenstown、S = Southampton
+  |Attribute|Description|  
+  | -------- | -------- | 
+  |【**Label**】Survival|0 = No、1 = Yes|
+  |Pclass|ticket class, 1 = 1st、2 = 2nd、3 = 3rd|
+  |Sex|gender|
+  |Age|age in years|
+  |Sibsp|# of siblings / spouses aboard the Titanic|
+  |Parch|# of parents / children aboard the Titanic|
+  |Ticket|ticket number|
+  |Fare|passenger fare|
+  |Cabin|cabin number|	
+  |Embarked|port of embarkation, C = Cherbourg、Q = Queenstown、S = Southampton|
   
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
