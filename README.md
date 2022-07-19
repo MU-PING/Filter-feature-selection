@@ -11,18 +11,18 @@
 
   |Attribute|Description|  
   | -------- | -------- | 
-  |PassengerId|passenger ID|
-  |【**Label**】Survived|0 = No、1 = Yes|
-  |Pclass|ticket class, 1 = 1st、2 = 2nd、3 = 3rd|
-  |Name|passenger name|
-  |Sex|gender|
-  |Age|age in years|
-  |SibSp|# of siblings / spouses aboard the Titanic|
-  |Parch|# of parents / children aboard the Titanic|
-  |Ticket|ticket number|
-  |Fare|passenger fare|
-  |Cabin|cabin number|	
-  |Embarked|port of embarkation, C = Cherbourg、Q = Queenstown、S = Southampton|
+  |PassengerId|【**continuous**】|
+  |【**Label**】Survived|【**discrete**】: 0 = No、1 = Yes|
+  |Pclass|ticket class,【**discrete**】: 1 = 1st、2 = 2nd、3 = 3rd|
+  |Name|【**discrete**】|
+  |Sex|【**discrete**】: male, female|
+  |Age|【**continuous**】|
+  |SibSp|# of siblings / spouses aboard the Titanic 【**continuous**】|
+  |Parch|# of parents / children aboard the Titanic 【**continuous**】|
+  |Ticket|【**discrete**】|
+  |Fare|【**continuous**】|
+  |Cabin|【**discrete**】|	
+  |Embarked|port of embarkation,【**discrete**】: C = Cherbourg、Q = Queenstown、S = Southampton|
   
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
